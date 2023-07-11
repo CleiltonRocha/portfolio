@@ -6,3 +6,8 @@ body {
     -webkit-font-smoothing: antialised;
     text-rendering: optimizeLegibility;
 }
+
+.card-projects {
+  cursor: url("../assets/cursor.svg"), auto;
+  transition: cursor 0.4s ease;
+}

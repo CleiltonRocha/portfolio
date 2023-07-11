@@ -57,14 +57,14 @@ export function AnimatedTitles(props: Props) {
     <motion.div
       ref={ref}
       animate={controls}
-      style={{ display: "flex" }}
+      style={{ display: "flex"}}
       variants={container}
       initial="hidden"
     >
       {words.map((word, index) => (
         <motion.span
           variants={child}
-          className={`font-bold text-center mr-3 text-zinc-50 tracking-tighter ${grayText.includes(word) ? 'text-gray-700' : ''}`}
+          className={`font-bold text-center mr-3 text-zinc-50 tracking-tighter ${grayText.includes(word) ? 'text-gray-800' : ''}`}
           key={index}
         >
           {word}

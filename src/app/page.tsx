@@ -5,12 +5,13 @@ import Logo from '../assets/logo.svg';
 import ProfileRounded from '../assets/profile-rounded.png';
 import { AnimatedTitles } from '../components/AnimatedTitles';
 import { Slider } from '../components/Slider';
+import { ScreenImage } from '../components/ScreenImage';
 
 export default function Home() {
   return (
     <div>
       <section 
-        className="w-full h-screen items-center justify-center">
+        className="w-full items-center justify-center">
         <Image src={blurHeroSectionTopRight} alt="Radial Gradient" width={800} height={800} className="pointer-events-none absolute top-0 right-0 -z-1 animate-fade-in-down"/>
         <Image src={blurHeroSectionBottomLeft} alt="Radial Gradient" width={800} height={800} className="pointer-events-none absolute -bottom-90 left-0 -z-1 animate-fade-in-down"/>
         <div className="flex flex-row w-full items-center justify-center relative overflow-hidden">
@@ -29,19 +30,27 @@ export default function Home() {
             </div>
               <AnimatedTitles text="Front-end Developer"/>
           </div>
-          <p className="desktop:max-w-[850px] mobile:max-w-[400px] mobile:px-4 text-center lg:text-4xl mobile:text-xl text-gray-700 tracking-tighter leading-tight font-medium animate-fade-in-down">
+          <p className="desktop:max-w-[900px] mobile:max-w-[400px] mobile:px-4 text-center lg:text-4xl mobile:text-xl text-gray-700 tracking-tighter leading-tight font-medium animate-fade-in-down">
             I’am Cleilton Rocha! I transform ideas into intuitive interfaces and I create a extraordinary user experiences.
           </p>
         </div>
-      </section>
-      <section className="w-full overflow-hidden desktop:px-[100px] mobile:px-4">
-        <div className="w-full flex flex-row items-center justify-center mt-16 desktop:text-xxs mobile:text-4xl">
-          <AnimatedTitles text="Recently Projects"/>
+        <div className="w-full flex flex-row items-center justify-center desktop:mt-20">
+          <ScreenImage />
         </div>
+      </section>
+      <section className="desktop:grid desktop:grid-cols-2 mobile:flex mobile:flex-col items-start desktop:px-[100px] mobile:px-4 mt-40">
+        <h1 className="font-bold mr-3 sticky top-10 desktop:max-w-[300px] text-zinc-50 desktop:text-xxs leading-lg tracking-tighter">
+          <span className="text-gray-500">Developer</span> Projects
+        </h1>
         <Slider />
       </section>
-      <section className="w-full h-screen overflow-hidden">
-        
+      <section className="desktop:grid desktop:grid-cols-2 mobile:flex mobile:flex-col items-start desktop:px-[100px] mobile:px-4 mt-36">
+        <Slider />
+        <div className="w-full flex flex-row justify-end sticky top-10">
+          <h1 className="font-bold text-right sticky top-10 desktop:max-w-[400px] text-zinc-50 desktop:text-xxs leading-lg tracking-tighter">
+            Design Projects
+          </h1>
+        </div>
       </section>
     </div>
   )

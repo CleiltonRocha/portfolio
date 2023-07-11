@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'gradient': 'linear-gradient(136deg, #131520 0%, rgba(19, 21, 32, 0.00) 100%)',
-        'gradient-border': 'linear-gradient(134deg, #2A2C39 0%, rgba(102, 104, 118, 0.00) 100%)',
+        'gradient-border': 'linear-gradient(to bottom, #2A2C39 0%, rgba(102, 104, 118, 0.00) 100%)',
       },
       colors: {
         blackpearl: {
@@ -39,15 +39,14 @@ module.exports = {
           '950': '#20222c',
         },
       },
-
       screens: {
         'mobile': '380px',
         'tablet': '780px',
-        // => @media (min-width: 640px) { ... }
         'desktop': '1024px',
-        // => @media (min-width: 1024px) { ... }
       },
-
+      lineHeight: {
+        lg: '120px'
+      },
       fontSize: {
         xxs : '96px',
       },
@@ -64,19 +63,19 @@ module.exports = {
         },
         'fade-in-up': {
           '0%': {
-              opacity: '0',
-              transform: 'translateY(100px)'
+            opacity: '0',
+            transform: 'translateY(100px)'
           },
           '100%': {
-              opacity: '1',
-              transform: 'translateY(0)'
+            opacity: '1',
+            transform: 'translateY(0)'
           },
         },
       },
       animation: {
           'fade-in-down': 'fade-in-down 2s ease-in-out',
-          'slide-top' : 'slide-top 2s ease-in-out'
-      }
+          'fade-in-up' : 'fade-in-up 2s ease-in-out'
+      },
     },
   },
   plugins: [],

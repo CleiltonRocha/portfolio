@@ -19,7 +19,7 @@ export function Slider() {
     }, [])
 
     const [repositories, setRepositories] = useState<Repository[]>([])
-    const excludedRepositories = ['CleiltonRocha', 'gastoo'];
+    const excludedRepositories = ['CleiltonRocha', 'gastoo', 'portfolio'];
     useEffect(() => {
         async function getRepositories () {
             const response = await fetch('https://api.github.com/users/CleiltonRocha/repos')
@@ -30,11 +30,8 @@ export function Slider() {
     }, [])
 
     return (
-        <motion.div 
-            ref={carousel}
-            className="flex flex-row items-center gap-8 mt-24 justify-start pb-[100px] cursor-grab pr-[100px]" whileTap={{cursor: "grabbing"}}
-            drag="x"
-            dragConstraints={{right: 0, left: -width- 100}}
+        <div 
+            className="flex flex-col items-center gap-8 justify-start w-full"
         >
             {
                 repositories.filter(repository => !excludedRepositories.includes(repository.name))
@@ -44,7 +41,7 @@ export function Slider() {
                     )
                 })
             }
-        </motion.div>
+        </div>
     )
 }
 
