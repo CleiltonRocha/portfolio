@@ -1,75 +1,44 @@
 "use client"
-import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 type Props =  {
     text: string;
 }
 
-export function AnimatedTitles(props: Props) {
-  
-  const words = props.text.split(" ");
-
-  const [ref, inView] = useInView();
-
-  const container = {
-    hidden: { opacity: 0 },
-    visible: (i = 1) => ({
-      opacity: 1,
-      transition: { staggerChildren: 0.12, delayChildren: 0.04 * i },
-    }),
-  };
-
-  const child = {
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        type: "spring",
-        damping: 12,
-        stiffness: 100,
-      },
-    },
-    hidden: {
-      opacity: 0,
-      x: 20,
-      transition: {
-        type: "spring",
-        damping: 12,
-        stiffness: 100,
-      },
-    },
-  };
-
-  const grayText = ["and", "Recently", "Do", "you", "want"];
-  const controls = useAnimation();
-
+export function AnimatedTitles({ text }: Props) {
   useEffect(() => {
-    console.log(inView);
-    if (inView) {
-      controls.start("visible");
-    }
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
-  }, [controls, inView]);
+  const highlight = ["and", "Recentes", "Do", "you", "want"];
+  const words = text.split(" ");
+
+  let wordMobileStyle = 'mobile:text-4xl';
+
+  if (text === 'Projetos Recentes') {
+    wordMobileStyle = 'mobile:text-6xl'
+  }
+
 
   return (
-    <motion.div
-      ref={ref}
-      animate={controls}
-      style={{ display: "flex"}}
-      variants={container}
-      initial="hidden"
-    >
-      {words.map((word, index) => (
-        <motion.span
-          variants={child}
-          className={`font-bold text-center mr-3 text-zinc-50 tracking-tighter ${grayText.includes(word) ? 'text-gray-800' : ''}`}
-          key={index}
-        >
-          {word}
-        </motion.span>
-      ))}
-    </motion.div>
-  );
+    <div
+    className={`font-bold desktop:text-xxs ${wordMobileStyle} text-center mr-3 text-zinc-50 tracking-tighter`}
+    data-aos-delay="300"
+    data-aos="fade-up"
+  >
+    {words.map((word, index) => (
+      <span
+        key={index}
+        className={`${highlight.includes(word) ? 'text-gray-500' : ''}`}
+      >
+        {word}{' '}
+      </span>
+    ))}
+  </div>
+  )
+  
 }

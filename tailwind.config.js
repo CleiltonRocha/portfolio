@@ -71,10 +71,19 @@ module.exports = {
             transform: 'translateY(0)'
           },
         },
+        'floating': {
+          '0%, 100%': {
+            transform: 'translateY(0)' // Posição inicial e final, sem alteração
+          },
+          '50%': {
+            transform: 'translateY(-10px)' // Posição intermediária, flutuando para cima
+          }
+        }
       },
       animation: {
           'fade-in-down': 'fade-in-down 2s ease-in-out',
-          'fade-in-up' : 'fade-in-up 2s ease-in-out'
+          'fade-in-up' : 'fade-in-up 2s ease-in-out',
+          'floating' : 'floating 3s infinite'
       },
     },
   },

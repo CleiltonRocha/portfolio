@@ -4,7 +4,7 @@ import blurHeroSectionBottomLeft from '../assets/blur-hero-section-bottom-left.s
 import Logo from '../assets/logo.svg';
 import ProfileRounded from '../assets/profile-rounded.png';
 import { AnimatedTitles } from '../components/AnimatedTitles';
-import { Slider } from '../components/Slider';
+import { Project } from '../components/Project';
 import { ScreenImage } from '../components/ScreenImage';
 
 export default function Home() {
@@ -30,27 +30,19 @@ export default function Home() {
             </div>
               <AnimatedTitles text="Front-end Developer"/>
           </div>
-          <p className="desktop:max-w-[900px] mobile:max-w-[400px] mobile:px-4 text-center lg:text-4xl mobile:text-xl text-gray-700 tracking-tighter leading-tight font-medium animate-fade-in-down">
-            I’am Cleilton Rocha! I transform ideas into intuitive interfaces and I create a extraordinary user experiences.
+          <p className="desktop:max-w-[50%] mobile:max-w-[450px] mobile:px-4 text-center lg:text-4xl mobile:text-xl text-gray-700 tracking-tighter leading-tight font-medium animate-fade-in-down">
+            Olá! Sou Cleilton Rocha! Eu transformo ideias em interfaces intuitivas e crio experiências de usuário incríveis.
           </p>
         </div>
-        <div className="w-full flex flex-row items-center justify-center desktop:mt-20">
+        <div className="w-full flex flex-row items-center justify-center desktop:mt-20 mobile:mt-20 mobile:px-6 animate-floating">
           <ScreenImage />
         </div>
       </section>
-      <section className="desktop:grid desktop:grid-cols-2 mobile:flex mobile:flex-col items-start desktop:px-[100px] mobile:px-4 mt-40">
-        <h1 className="font-bold mr-3 sticky top-10 desktop:max-w-[300px] text-zinc-50 desktop:text-xxs leading-lg tracking-tighter">
-          <span className="text-gray-500">Developer</span> Projects
-        </h1>
-        <Slider />
-      </section>
-      <section className="desktop:grid desktop:grid-cols-2 mobile:flex mobile:flex-col items-start desktop:px-[100px] mobile:px-4 mt-36">
-        <Slider />
-        <div className="w-full flex flex-row justify-end sticky top-10">
-          <h1 className="font-bold text-right sticky top-10 desktop:max-w-[400px] text-zinc-50 desktop:text-xxs leading-lg tracking-tighter">
-            Design Projects
-          </h1>
+      <section className="flex flex-col gap-20 items-center mt-36">
+        <div className="w-full flex items-center justify-center">
+          <AnimatedTitles text="Projetos Recentes"/>
         </div>
+        <Project />
       </section>
     </div>
   )

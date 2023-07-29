@@ -31,7 +31,7 @@ export function ScreenImage() {
                 <Image 
                     src={FigmaScreen} 
                     alt="Figma Screen" 
-                    className="animate-fade-in-up -z-10 cursor-pointer ease-in border-2 border-gray-800 rounded-3xl" 
+                    className="animate-fade-in-up -z-10 cursor-pointer ease-in border-2 border-gray-800 rounded-xl" 
                 />
             )}
         </div>
