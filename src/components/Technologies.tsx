@@ -11,14 +11,14 @@ import {
 } from 'react-devicons';
 
 interface TechnologyProps {
-    repositoryName: string
+    projectName: string
 }
 
-export function Technologies({ repositoryName } : TechnologyProps) {
+export function Technologies({ projectName } : TechnologyProps) {
 
     let technologies = null;
 
-    if (repositoryName === 'app-contacts-ui-react-native') {
+    if (projectName === 'app-contacts-ui-react-native') {
       technologies = (
         <div className="flex flex-row gap-4">
           <div className="flex flex-col items-center justify-center bg-gray-900 w-14 h-14 rounded-full ring-1 ring-gray-700 cursor-pointer">
@@ -34,7 +34,7 @@ export function Technologies({ repositoryName } : TechnologyProps) {
       );
     }
 
-    if (repositoryName === 'capsula-do-tempo') {
+    if (projectName === 'capsula-do-tempo') {
       technologies = (
         <div className="flex flex-row gap-4">
           <div className="flex flex-col items-center justify-center bg-gray-900 w-14 h-14 rounded-full ring-1 ring-gray-700 cursor-pointer">
@@ -56,7 +56,7 @@ export function Technologies({ repositoryName } : TechnologyProps) {
       );
     }
 
-    if (repositoryName === 'desafios-bora-codar') {
+    if (projectName === 'desafios-bora-codar') {
       technologies = (
         <div className="flex flex-row gap-4">
           <div className="flex flex-col items-center justify-center bg-gray-900 w-14 h-14 rounded-full ring-1 ring-gray-700 cursor-pointer">
@@ -72,7 +72,7 @@ export function Technologies({ repositoryName } : TechnologyProps) {
       );
     }
 
-    if (repositoryName === 'habits') {
+    if (projectName === 'habits') {
       technologies = (
         <div className="flex flex-row gap-4">
           <div className="flex flex-col items-center justify-center bg-gray-900 w-14 h-14 rounded-full ring-1 ring-gray-700 cursor-pointer">
@@ -91,7 +91,7 @@ export function Technologies({ repositoryName } : TechnologyProps) {
       );
     }
 
-    if (repositoryName === 'kanban-app' || repositoryName === 'twitter-ui-react') {
+    if (projectName === 'kanban-app' || projectName === 'twitter-ui-react') {
       technologies = (
         <div className="flex flex-row gap-4">
           <div className="flex flex-col items-center justify-center bg-gray-900 w-14 h-14 rounded-full ring-1 ring-gray-700 cursor-pointer">
@@ -106,7 +106,7 @@ export function Technologies({ repositoryName } : TechnologyProps) {
 
     return(
         <>
-            {technologies} 
+          {technologies} 
         </>
     )
 }

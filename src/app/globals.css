@@ -11,3 +11,13 @@ body {
   cursor: url("../assets/cursor.svg"), auto;
   transition: cursor 0.4s ease;
 }
+
+.img-with-mark::before {
+  content: "";
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  z-index: 1;
+  background-image: url('../assets/selo.svg');
+  background-size: cover;
+}

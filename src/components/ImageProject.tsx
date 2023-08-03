@@ -51,10 +51,9 @@ export function ImageProject({ projectName } : ImageProjectProps) {
     }
 
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full desktop:h-full mobile:h-[200px] relative">
         <Image 
             src={imagePath} alt="Project Image" 
-            className="absolute top-0 left-0 w-full h-full"
             layout="fill"
             objectFit="cover" 
         />

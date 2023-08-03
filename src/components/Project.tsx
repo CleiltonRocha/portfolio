@@ -35,10 +35,10 @@ export function Project() {
         .map(repository => {
           return(
             <a href={repository.html_url} key={repository.id} className="w-full sticky top-0">
-                <div className="desktop:grid desktop:grid-cols-2 mobile:flex mobile:flex-col-reverse gap-6 bg-blackpearl-950 w-full h-screen sticky card-projects">
+                <div className="desktop:grid desktop:grid-cols-2 mobile:flex mobile:flex-col-reverse gap-6 bg-blackpearl-950 w-full desktop:h-screen mobile:h-full sticky card-projects">
                   <div className="flex flex-col items-start justify-center gap-12 desktop:pl-16 mobile:p-4">
                     <h1 className="text-zinc-50 desktop:text-2xl mobile:text-3xl font-semibold">{counter}</h1>
-                      <Tags repositoryName={repository.name}/>
+                      <Tags projectName={repository.name}/>
                     <div className="flex flex-col gap-6">
                       <h3 className="text-zinc-50 desktop:text-5xl mobile:text-3xl font-semibold leading-tight tracking-tighter">{formatRepositoryName(repository.name)}</h3>
                       <p className="text-gray-700 font-medium leading-tight desktop:text-2xl max-w-[95%] mobile:text-base">{repository.description}</p>
@@ -46,7 +46,7 @@ export function Project() {
                     <div className="flex flex-col gap-6 mobile:pb-10">
                       <h4 className="text-zinc-50 text-2xl font-semibold leading-tight tracking-tighter">Tecnologias</h4>
                       <div className="flex flex-row gap-4">
-                          <Technologies repositoryName={repository.name} />
+                          <Technologies projectName={repository.name} />
                       </div>
                     </div>
                   </div>
@@ -58,10 +58,10 @@ export function Project() {
         })
       }
       <a href="https://dribbble.com/shots/21866602-UI-Design-Loctraz-website" target="_blank" className="w-full sticky top-0">
-        <div className="desktop:grid desktop:grid-cols-2 mobile:flex mobile:flex-col-reverse gap-6 bg-blackpearl-950 w-full h-screen sticky card-projects">
+        <div className="desktop:grid desktop:grid-cols-2 mobile:flex mobile:flex-col-reverse gap-6 bg-blackpearl-950 w-full desktop:h-screen mobile:h-full sticky card-projects">
           <div className="flex flex-col items-start justify-center gap-12 desktop:pl-16 mobile:p-4">
             <h1 className="text-zinc-50 desktop:text-2xl mobile:text-3xl font-semibold">{counter}</h1>
-              <Tags tagName="Design"/>
+              <Tags projectName="Design"/>
             <div className="flex flex-col gap-6">
               <h3 className="text-zinc-50 desktop:text-5xl mobile:text-3xl font-semibold leading-tight tracking-tighter">Loctraz Website</h3>
               <p className="text-gray-700 font-medium leading-tight desktop:text-2xl mobile:text-base max-w-[95%] mobile:pb-10">
@@ -76,21 +76,21 @@ export function Project() {
         {counter = counter + 1}
       </a>
       <a href="#" target="_blank" className="w-full sticky top-0">
-        <div className="desktop:grid desktop:grid-cols-2 mobile:flex mobile:flex-col-reverse gap-6 bg-blackpearl-950 w-full h-screen sticky card-projects">
+        <div className="desktop:grid desktop:grid-cols-2 mobile:flex mobile:flex-col-reverse gap-6 bg-blackpearl-950 w-full desktop:h-screen mobile:h-full sticky top-0 card-projects">
           <div className="flex flex-col items-start justify-center gap-12 desktop:pl-16 mobile:p-4">
             <h1 className="text-zinc-50 desktop:text-2xl mobile:text-3xl font-semibold">{counter}</h1>
-              <Tags tagName="Design"/>
+              <Tags projectName="Design"/>
             <div className="flex flex-col gap-6">
               <h3 className="text-zinc-50 desktop:text-5xl mobile:text-3xl font-semibold leading-tight tracking-tighter">Hero Section Design</h3>
-              <p className="text-gray-700 font-medium leading-tight desktop:text-2xl mobile:text-base desktop:max-w-[95%] mobile:pb-10">
+              <p className="text-gray-700 font-medium leading-tight desktop:text-2xl mobile:text-base desktop:max-w-[95%]">
                 Desenvolvi uma interface de estudos para uma clínica médica que destaca a maravilha do design! Com um visual
                 envolvente e funcional, os profissionais de saúde desfrutarão de uma experiência de aprendizado única e 
                 inspiradora. 
               </p>
-              {/* <div className="flex gap-3">
-                <Heart size={24} fill="#e11d48"/>
-                <h6 className="text-zinc-50 font-semibold">Curtido por <span className="text-gray-600">Gilberto Prado</span></h6>
-              </div> */}
+            </div>
+            <div className="flex gap-3 top-4">
+              <Heart size={24} fill="#e11d48"/>
+              <h6 className="text-zinc-50 font-semibold">Curtido por <span className="text-gray-600">Gilberto Prado</span></h6>
             </div>
           </div>
           <div className="w-full bg-gray-700 h-full">

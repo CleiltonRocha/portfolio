@@ -10,6 +10,8 @@ module.exports = {
       backgroundImage: {
         'gradient': 'linear-gradient(136deg, #131520 0%, rgba(19, 21, 32, 0.00) 100%)',
         'gradient-border': 'linear-gradient(to bottom, #2A2C39 0%, rgba(102, 104, 118, 0.00) 100%)',
+        'gradient-time-line-blue' : 'linear-gradient(180deg, rgba(79, 106, 255, 0.00) 0%, #4F6AFF 100%)',
+        'gradient-time-line-white' : 'linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%)'
       },
       colors: {
         blackpearl: {
@@ -78,12 +80,21 @@ module.exports = {
           '50%': {
             transform: 'translateY(-10px)' // Posição intermediária, flutuando para cima
           }
+        },
+        'rotate': {
+          'from': {
+            transform: 'rotate(0deg)' // Posição inicial e final, sem alteração
+          },
+          'to': {
+            transform: 'rotate(360deg)' // Posição inicial e final, sem alteração
+          },
         }
       },
       animation: {
           'fade-in-down': 'fade-in-down 2s ease-in-out',
           'fade-in-up' : 'fade-in-up 2s ease-in-out',
-          'floating' : 'floating 3s infinite'
+          'floating' : 'floating 3s infinite',
+          'rotate' : 'rotate 5s linear infinite'
       },
     },
   },

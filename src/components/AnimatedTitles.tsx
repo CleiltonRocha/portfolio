@@ -14,7 +14,7 @@ export function AnimatedTitles({ text }: Props) {
     AOS.refresh();
   }, []);
 
-  const highlight = ["and", "Recentes", "Do", "you", "want"];
+  const highlight = ["and", "Recentes", "Sobre", "you", "want"];
   const words = text.split(" ");
 
   let wordMobileStyle = 'mobile:text-4xl';
