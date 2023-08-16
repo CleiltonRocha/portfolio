@@ -9,8 +9,8 @@ import ProfileImage from '@/assets/profile-image.png'
 
 export function AboutMeSection() {
   return (
-    <section className="desktop:grid desktop:grid-cols-2 mobile:flex mobile:flex-col mobile:gap-6 mt-36 desktop:px-16 mobile:px-6 w-full relative">
-        <div className="relative img-with-mark before:animate-rotate desktop:before:bottom-32 desktop:before:right-32 mobile:before:-top-12 mobile:before:-right-2">
+    <section id="aboutme" className="desktop:grid desktop:grid-cols-2 mobile:flex mobile:flex-col mobile:gap-6 mt-36 desktop:px-16 mobile:px-6 w-full relative">
+        <div className="relative img-with-mark before:animate-rotate desktop:before:bottom-32 desktop:before:right-32 mobile:before:-top-12 mobile:before:right-0">
           <Image src={ProfileImage} alt="Foto de Perfil - Cleilton Rocha" className="sticky desktop:top-10 -z-index-1"/>
         </div>
         <div className="w-full flex flex-col desktop:gap-16 mobile:gap-6 mobile:mt-10 items-start justify-start">

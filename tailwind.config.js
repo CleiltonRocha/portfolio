@@ -11,7 +11,8 @@ module.exports = {
         'gradient': 'linear-gradient(136deg, #131520 0%, rgba(19, 21, 32, 0.00) 100%)',
         'gradient-border': 'linear-gradient(to bottom, #2A2C39 0%, rgba(102, 104, 118, 0.00) 100%)',
         'gradient-time-line-blue' : 'linear-gradient(180deg, rgba(79, 106, 255, 0.00) 0%, #4F6AFF 100%)',
-        'gradient-time-line-white' : 'linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%)'
+        'gradient-time-line-white' : 'linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%)',
+        'bg-skills' : "url('/src/assets/bg-skills.png')"
       },
       colors: {
         blackpearl: {

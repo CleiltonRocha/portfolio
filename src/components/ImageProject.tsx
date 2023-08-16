@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { useMemo } from 'react';
 
 import ImgAppContacts from '@/assets/projects/contacts.jpg'
 import ImgCapsulaDoTempo from '@/assets/projects/capsula-do-tempo.jpg'

@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import { text } from "stream/consumers";
 
 type Props =  {
     text: string;
@@ -14,30 +15,14 @@ export function AnimatedTitles({ text }: Props) {
     AOS.refresh();
   }, []);
 
-  const highlight = ["and", "Recentes", "Sobre", "you", "want"];
-  const words = text.split(" ");
-
-  let wordMobileStyle = 'mobile:text-4xl';
-
-  if (text === 'Projetos Recentes') {
-    wordMobileStyle = 'mobile:text-6xl'
-  }
-
 
   return (
     <div
-    className={`font-bold desktop:text-xxs ${wordMobileStyle} text-center mr-3 text-zinc-50 tracking-tighter`}
+    className={`font-bold mobile:text-5xl desktop:text-xxs leading-tight text-center tracking-tighter from-zinc-50 to-gray-700 bg-gradient-to-r bg-clip-text text-transparent desktop:max-w-[60%] mobile:max-w-[90%]`}
     data-aos-delay="300"
     data-aos="fade-up"
   >
-    {words.map((word, index) => (
-      <span
-        key={index}
-        className={`${highlight.includes(word) ? 'text-gray-500' : ''}`}
-      >
-        {word}{' '}
-      </span>
-    ))}
+    {text}
   </div>
   )
   

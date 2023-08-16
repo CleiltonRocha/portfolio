@@ -15,9 +15,15 @@ body {
 .img-with-mark::before {
   content: "";
   position: absolute;
-  width: 128px;
-  height: 128px;
+  width: 8rem;
+  height: 8rem;
   z-index: 1;
   background-image: url('../assets/selo.svg');
   background-size: cover;
+}
+
+.skills-card {
+  background: linear-gradient(137deg, rgba(19, 21, 32, 0.8) 0%, rgba(19, 21, 32, 0.00) 100%);
+  backdrop-filter: blur(113px);
+  opacity: .87 !important;
 }

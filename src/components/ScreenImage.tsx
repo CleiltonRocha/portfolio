@@ -25,13 +25,13 @@ export function ScreenImage() {
                 <Image 
                     src={CodeScreen} 
                     alt="Code Screen" 
-                    className="animate-fade-in-up -z-10 cursor-pointer ease-in border-2 border-gray-800 rounded-xl" 
+                    className="animate-fade-in-up -z-10 cursor-pointer ease-in border-2 border-gray-800 rounded-xl desktop:block mobile:hidden" 
                 />
             ) : (
                 <Image 
                     src={FigmaScreen} 
                     alt="Figma Screen" 
-                    className="animate-fade-in-up -z-10 cursor-pointer ease-in border-2 border-gray-800 rounded-xl" 
+                    className="animate-fade-in-up -z-10 cursor-pointer ease-in border-2 border-gray-800 rounded-xl desktop:block mobile:hidden" 
                 />
             )}
         </div>
