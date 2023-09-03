@@ -5,7 +5,9 @@ import { CardSkills } from "./CardSkills";
 export function SkillsSection() {
   return (
     <section id="skills" className="mt-36 desktop:h-screen bg-[url('../assets/bg-skills.png')] bg-no-repeat bg-contain bg-center mobile:px-4">
-        <AnimatedTitles text="Hard Skills"/>
+        <AnimatedTitles>
+            Hard Skills
+        </AnimatedTitles>
         <div className="mt-20">
             <div className="flex desktop:flex-row mobile:flex-col h-full w-full items-center justify-center gap-8">
                 <div className="flex flex-col gap-8 mobile:items-center mobile:justify-center">

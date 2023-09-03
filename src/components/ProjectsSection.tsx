@@ -5,7 +5,9 @@ export function ProjectsSection() {
   return (
     <section id="projects" className="flex flex-col gap-20 items-center mt-36">
       <div className="w-full flex items-center justify-center">
-        <AnimatedTitles text="Projetos Recentes"/>
+        <AnimatedTitles>
+          Projetos Recentes
+        </AnimatedTitles>
       </div>
       <Project />
     </section>
