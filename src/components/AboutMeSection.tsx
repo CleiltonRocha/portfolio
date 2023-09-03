@@ -14,7 +14,9 @@ export function AboutMeSection() {
           <Image src={ProfileImage} alt="Foto de Perfil - Cleilton Rocha" className="sticky desktop:top-10 -z-index-1"/>
         </div>
         <div className="w-full flex flex-col desktop:gap-16 mobile:gap-6 mobile:mt-10 items-start justify-start">
-          <AnimatedTitles text="Sobre mim"/>
+          <AnimatedTitles>
+            Sobre mim
+          </AnimatedTitles>
           <p className="text-gray-700 font-medium leading-tight desktop:text-2xl mobile:text-base mobile:pb-10">
             Eu sou um profissional apaixonado por Design e front-end. Adoro criar designs bonitos e intuitivos para interfaces 
             digitais e estou constantemente buscando novas formas de melhorar a experiência do usuário.
