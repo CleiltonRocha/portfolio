@@ -3,13 +3,11 @@ import { Project } from "./Project";
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="flex flex-col gap-20 items-center mt-36">
-      <div className="w-full flex items-center justify-center">
-        <AnimatedTitles>
-          Projetos Recentes
-        </AnimatedTitles>
+    <section id="projects" className="mt-36 flex flex-col items-center gap-20">
+      <div className="flex w-full items-center justify-center">
+        <AnimatedTitles>Projetos Recentes</AnimatedTitles>
       </div>
       <Project />
     </section>
-  )
-};
+  );
+}
