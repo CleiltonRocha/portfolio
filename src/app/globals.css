@@ -27,3 +27,14 @@ body {
   backdrop-filter: blur(113px);
   opacity: .87 !important;
 }
+
+::-webkit-scrollbar {
+  border-radius: 999px;
+  width: 8px;
+  background-color: #262626;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background-color: #77e123;
+}

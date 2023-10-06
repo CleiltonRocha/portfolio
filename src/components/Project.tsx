@@ -14,7 +14,7 @@ interface Repository {
 
 export function Project() {
   const [repositories, setRepositories] = useState<Repository[]>([]);
-  const excludedRepositories = ["CleiltonRocha", "gastoo", "portfolio"];
+  const excludedRepositories = ["CleiltonRocha", "gastoo", "portfolio", "api-node-study"];
 
   useEffect(() => {
     async function getRepositories() {
@@ -50,7 +50,7 @@ export function Project() {
                     <h3 className="font-semibold leading-tight tracking-tighter text-zinc-50 mobile:text-3xl desktop:text-5xl">
                       {formatRepositoryName(repository.name)}
                     </h3>
-                    <p className="max-w-[95%] font-medium leading-tight text-gray-700 mobile:text-base desktop:text-2xl">
+                    <p className="max-w-[95%] font-medium leading-tight text-gray-600 mobile:text-base desktop:text-2xl">
                       {repository.description}
                     </p>
                   </div>
@@ -84,7 +84,7 @@ export function Project() {
               <h3 className="font-semibold leading-tight tracking-tighter text-zinc-50 mobile:text-3xl desktop:text-5xl">
                 Loctraz Website
               </h3>
-              <p className="max-w-[95%] font-medium leading-tight text-gray-700 mobile:pb-10 mobile:text-base desktop:text-2xl">
+              <p className="max-w-[95%] font-medium leading-tight text-gray-600 mobile:pb-10 mobile:text-base desktop:text-2xl">
                 Apresento com orgulho meu projeto de UI para a empresa Loctraz,
                 desenvolvido no Figma. Com layouts criativos e intuitivos, a
                 interface é cuidadosamente elaborada para refletir a identidade
@@ -109,7 +109,7 @@ export function Project() {
               <h3 className="font-semibold leading-tight tracking-tighter text-zinc-50 mobile:text-3xl desktop:text-5xl">
                 Hero Section Design
               </h3>
-              <p className="font-medium leading-tight text-gray-700 mobile:text-base desktop:max-w-[95%] desktop:text-2xl">
+              <p className="font-medium leading-tight text-gray-600 mobile:text-base desktop:max-w-[95%] desktop:text-2xl">
                 Desenvolvi uma interface de estudos para uma clínica médica que
                 destaca a maravilha do design! Com um visual envolvente e
                 funcional, os profissionais de saúde desfrutarão de uma

@@ -13,7 +13,6 @@ import phpIcon from "@/assets/icons/php.svg";
 
 type CardSkillsProps = {
   title: string;
-  description: string;
   icon: string;
 };
 
@@ -49,9 +48,6 @@ export function CardSkills(props: CardSkillsProps) {
         <h4 className="text-2xl font-bold leading-tight text-zinc-100">
           {props.title}
         </h4>
-        <span className="text-xl font-medium leading-tight text-gray-700">
-          {props.description}
-        </span>
       </div>
     </Tilt>
   );

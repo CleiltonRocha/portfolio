@@ -19,7 +19,9 @@ export function AboutMeSection() {
         />
       </div>
       <div className="flex w-full flex-col items-start justify-start mobile:mt-10 mobile:gap-6 desktop:gap-16">
-        <AnimatedTitles>Sobre mim</AnimatedTitles>
+        <h1 className="animate-fade-in-down text-zinc-100 text-center font-bold desktop:leading-lg tracking-tighter text-transparent desktop:text-xxs mobile:text-[2.5rem] mobile:leading-sm">
+          Sobre mim
+        </h1>
         <p className="font-medium leading-tight text-gray-700 mobile:pb-10 mobile:text-base desktop:text-2xl">
           Eu sou um profissional apaixonado por Design e front-end. Adoro criar
           designs bonitos e intuitivos para interfaces digitais e estou
@@ -32,20 +34,20 @@ export function AboutMeSection() {
           </h4>
           <div className="flex items-start justify-start gap-4">
             <div className="flex flex-col items-center justify-center gap-1">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-blackpearl-400">
-                <Briefcase size={24} color="#FFFFFF" />
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-green">
+                <Briefcase size={24} color="#060606" />
               </div>
               <div className="h-[165px] w-1 rounded-md bg-gradient-time-line-blue"></div>
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-blackpearl-400">
-                <Briefcase size={24} color="#FFFFFF" />
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-green">
+                <Briefcase size={24} color="#060606" />
               </div>
               <div className="h-[165px] w-1 rounded-md bg-gradient-time-line-blue"></div>
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-zinc-100">
-                <Book size={24} color="#02040f" />
+                <Book size={24} color="#060606" />
               </div>
               <div className="h-[165px] w-1 rounded-md bg-gradient-time-line-white"></div>
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-zinc-100">
-                <Book size={24} color="#02040f" />
+                <Book size={24} color="#060606" />
               </div>
               <div className="h-[165px] w-1 rounded-md bg-gradient-time-line-white"></div>
             </div>

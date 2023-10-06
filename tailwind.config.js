@@ -13,10 +13,11 @@ module.exports = {
         "gradient-border":
           "linear-gradient(to bottom, #2A2C39 0%, rgba(102, 104, 118, 0.00) 100%)",
         "gradient-time-line-blue":
-          "linear-gradient(180deg, rgba(79, 106, 255, 0.00) 0%, #4F6AFF 100%)",
+          "linear-gradient(180deg, rgba(79, 106, 255, 0.00) 0%, #77e123 100%)",
         "gradient-time-line-white":
           "linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%)",
-        "bg-skills": "url('/src/assets/bg-skills.png')",
+        "bg-skills": 
+          "url('/src/assets/bg-skills.png')",
       },
       colors: {
         blackpearl: {
@@ -30,21 +31,22 @@ module.exports = {
           700: "#142771",
           800: "#15225a",
           900: "#16204b",
-          950: "#02040f",
+          950: "#060606",
         },
         gray: {
-          50: "#f6f7f9",
-          100: "#ecedf2",
-          200: "#d5d8e2",
-          300: "#b0b6c9",
-          400: "#858fab",
-          500: "#667191",
-          600: "#515a78",
-          700: "#424962",
-          800: "#3a4052",
-          900: "#333747",
-          950: "#20222c",
+          50: '#e6e6e6',
+          100: '#cccccc',
+          200: '#b3b3b3',
+          300: '#999999',
+          400: '#808080',
+          500: '#666666',
+          600: '#4d4d4d',
+          700: '#333333',
+          800: '#262626',
+          900: '#1f1f1f',
+          950: '#050505',
         },
+        green: '#77e123'
       },
       screens: {
         mobile: "380px",
@@ -80,18 +82,18 @@ module.exports = {
         },
         floating: {
           "0%, 100%": {
-            transform: "translateY(0)", // Posição inicial e final, sem alteração
+            transform: "translateY(0)",
           },
           "50%": {
-            transform: "translateY(-10px)", // Posição intermediária, flutuando para cima
+            transform: "translateY(-10px)",
           },
         },
         rotate: {
           from: {
-            transform: "rotate(0deg)", // Posição inicial e final, sem alteração
+            transform: "rotate(0deg)",
           },
           to: {
-            transform: "rotate(360deg)", // Posição inicial e final, sem alteração
+            transform: "rotate(360deg)",
           },
         },
       },

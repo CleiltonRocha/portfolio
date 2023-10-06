@@ -7,32 +7,30 @@ export function SkillsSection() {
       id="skills"
       className="mt-36 bg-[url('../assets/bg-skills.png')] bg-contain bg-center bg-no-repeat mobile:px-4 desktop:h-screen"
     >
-      <AnimatedTitles>Hard Skills</AnimatedTitles>
+      <h1 className="animate-fade-in-down text-zinc-100 text-center font-bold desktop:leading-lg tracking-tighter text-transparent desktop:text-xxs mobile:text-[2.5rem] mobile:leading-sm">
+        Hard Skills
+      </h1>
       <div className="mt-20">
         <div className="flex h-full w-full items-center justify-center gap-8 mobile:flex-col desktop:flex-row">
           <div className="flex flex-col gap-8 mobile:items-center mobile:justify-center">
             <CardSkills
               title="ReactJS"
-              description="Admiro muito esse cara!"
               icon="react"
             />
-            <CardSkills title="PHP" description="Um amigo diário" icon="php" />
+            <CardSkills title="PHP" icon="php" />
           </div>
 
           <div className="flex flex-col gap-8 mobile:items-center mobile:justify-center">
             <CardSkills
               title="React Native"
-              description="Este é Incrível!📱"
               icon="react"
             />
             <CardSkills
               title="TailwindCSS"
-              description="Uma das melhores ferramentas que já conheci!"
               icon="tailwind"
             />
             <CardSkills
               title="TypeScript"
-              description="This is magic! ✨"
               icon="typeScript"
             />
           </div>
@@ -40,12 +38,10 @@ export function SkillsSection() {
           <div className="flex flex-col gap-8 mobile:items-center mobile:justify-center">
             <CardSkills
               title="NextJS"
-              description="Todos os dias aprendendo mais sobre esse cara."
               icon="next"
             />
             <CardSkills
               title="Bootstrap"
-              description="Um amigo de longa data."
               icon="bootstrap"
             />
           </div>
