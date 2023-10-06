@@ -29,17 +29,17 @@ export function HeroSection() {
         </p>
       </div>
       <div className="mt-10 flex items-center justify-center gap-3">
-        <a href="#">
+        <a href="https://www.instagram.com/uidesign.cr/" aria-aria-label="Link para Instagram">
           <div className="flex h-14 w-14 flex-col items-center justify-center rounded-full bg-gray-900 transition-all hover:bg-gray-700">
             <InstagramIcon size="1.5rem" color="#b0b6c9" />
           </div>
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/cleilton-rocha/" aria-aria-label="Link para Linkedin">
           <div className="flex h-14 w-14 flex-col items-center justify-center rounded-full bg-gray-900 transition-all hover:bg-gray-700">
             <LinkedinPlainIcon size="1.5rem" color="#b0b6c9" />
           </div>
         </a>
-        <a href="#">
+        <a href="https://github.com/CleiltonRocha" aria-aria-label="Link para Github" target="_blank">
           <div className="flex h-14 w-14 flex-col items-center justify-center rounded-full bg-gray-900 transition-all hover:bg-gray-700">
             <GithubIcon size="1.5rem" color="#b0b6c9" />
           </div>

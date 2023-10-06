@@ -29,9 +29,9 @@ export function AboutMeSection() {
           usuário.
         </p>
         <div className="flex flex-col gap-12">
-          <h4 className="text-2xl font-bold leading-tight text-zinc-100">
+          <h1 className="text-2xl font-bold leading-tight text-zinc-100">
             <span className="text-gray-700">Experiências</span> e Formação
-          </h4>
+          </h1>
           <div className="flex items-start justify-start gap-4">
             <div className="flex flex-col items-center justify-center gap-1">
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-green">

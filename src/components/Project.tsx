@@ -47,9 +47,9 @@ export function Project() {
                   </h1>
                   <Tags projectName={repository.name} />
                   <div className="flex flex-col gap-6">
-                    <h3 className="font-semibold leading-tight tracking-tighter text-zinc-50 mobile:text-3xl desktop:text-5xl">
+                    <h1 className="font-semibold leading-tight tracking-tighter text-zinc-50 mobile:text-3xl desktop:text-5xl">
                       {formatRepositoryName(repository.name)}
-                    </h3>
+                    </h1>
                     <p className="max-w-[95%] font-medium leading-tight text-gray-600 mobile:text-base desktop:text-2xl">
                       {repository.description}
                     </p>
@@ -81,9 +81,9 @@ export function Project() {
             </h1>
             <Tags projectName="Design" />
             <div className="flex flex-col gap-6">
-              <h3 className="font-semibold leading-tight tracking-tighter text-zinc-50 mobile:text-3xl desktop:text-5xl">
+              <h1 className="font-semibold leading-tight tracking-tighter text-zinc-50 mobile:text-3xl desktop:text-5xl">
                 Loctraz Website
-              </h3>
+              </h1>
               <p className="max-w-[95%] font-medium leading-tight text-gray-600 mobile:pb-10 mobile:text-base desktop:text-2xl">
                 Apresento com orgulho meu projeto de UI para a empresa Loctraz,
                 desenvolvido no Figma. Com layouts criativos e intuitivos, a
@@ -106,9 +106,9 @@ export function Project() {
             </h1>
             <Tags projectName="Design" />
             <div className="flex flex-col gap-6">
-              <h3 className="font-semibold leading-tight tracking-tighter text-zinc-50 mobile:text-3xl desktop:text-5xl">
+              <h1 className="font-semibold leading-tight tracking-tighter text-zinc-50 mobile:text-3xl desktop:text-5xl">
                 Hero Section Design
-              </h3>
+              </h1>
               <p className="font-medium leading-tight text-gray-600 mobile:text-base desktop:max-w-[95%] desktop:text-2xl">
                 Desenvolvi uma interface de estudos para uma clínica médica que
                 destaca a maravilha do design! Com um visual envolvente e
@@ -118,10 +118,10 @@ export function Project() {
             </div>
             <div className="top-4 flex gap-3">
               <Heart size={24} fill="#e11d48" />
-              <h6 className="font-semibold text-zinc-50">
+              <h2 className="font-semibold text-xl text-zinc-50">
                 Curtido por{" "}
                 <span className="text-gray-600">Gilberto Prado</span>
-              </h6>
+              </h2>
             </div>
           </div>
           <div className="h-full w-full bg-gray-700">
