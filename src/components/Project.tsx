@@ -55,9 +55,9 @@ export function Project() {
                     </p>
                   </div>
                   <div className="flex flex-col gap-6 mobile:pb-10">
-                    <h4 className="text-2xl font-semibold leading-tight tracking-tighter text-zinc-50">
+                    <h1 className="text-2xl font-semibold leading-tight tracking-tighter text-zinc-50">
                       Tecnologias
-                    </h4>
+                    </h1>
                     <div className="flex flex-row gap-4">
                       <Technologies projectName={repository.name} />
                     </div>

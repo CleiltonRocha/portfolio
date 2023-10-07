@@ -47,9 +47,9 @@ export function CardSkills(props: CardSkillsProps) {
     >
       <Image src={iconPath} alt={props.icon} />
       <div className="flex flex-col items-start gap-2">
-        <h4 className="text-2xl font-bold leading-tight text-zinc-100">
+        <h1 className="text-2xl font-bold leading-tight text-zinc-100">
           {props.title}
-        </h4>
+        </h1>
       </div>
     </Tilt>
   );

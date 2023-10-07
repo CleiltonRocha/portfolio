@@ -10,7 +10,7 @@ export function SkillsSection() {
         Hard Skills
       </h1>
       <div className="mt-20 w-full inline-flex flex-nowrap overflow-hidden py-3 relative slider">
-        <div className="flex items-center desktop:ml-6 desktop:gap-6 justify-center desktop:gap-4 animate-infinite-scroll-left">
+        <div className="flex items-center desktop:ml-6 desktop:gap-6 justify-center animate-infinite-scroll-left">
           <CardSkills
             title="ReactJS"
             icon="react"
