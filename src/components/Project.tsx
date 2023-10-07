@@ -40,8 +40,8 @@ export function Project() {
               key={repository.id}
               className="sticky top-0 w-full"
             >
-              <div className="card-projects sticky w-full gap-6 bg-blackpearl-950 mobile:flex mobile:h-full mobile:flex-col-reverse desktop:grid desktop:h-screen desktop:grid-cols-2">
-                <div className="flex flex-col items-start justify-center gap-12 mobile:p-4 desktop:pl-16">
+              <div className="card-projects sticky w-full bg-blackpearl-950 mobile:flex mobile:h-full mobile:flex-col-reverse desktop:grid desktop:h-screen desktop:grid-cols-2">
+                <div className="flex flex-col items-start justify-center gap-12 mobile:p-4 desktop:pl-16 border-t-2 border-r-2 border-gray-800">
                   <h1 className="font-semibold text-zinc-50 mobile:text-3xl desktop:text-2xl">
                     {counter}
                   </h1>

@@ -52,46 +52,46 @@ export function AboutMeSection() {
               <div className="h-[165px] w-1 rounded-md bg-gradient-time-line-white"></div>
             </div>
             <div className="flex flex-col gap-14">
-              <h3 className="mt-3 text-2xl font-bold leading-tight text-gray-500">
+              <p className="mt-3 text-2xl font-bold leading-tight text-gray-500">
                 2023
-              </h3>
+              </p>
               <div>
-                <h4 className="text-xl font-bold leading-tight text-zinc-100">
+                <h1 className="text-xl font-bold leading-tight text-zinc-100">
                   Front-end Developer | UI Designer
-                </h4>
+                </h1>
                 <p className="mt-2 font-medium leading-tight text-gray-700 mobile:pb-10 mobile:text-base desktop:text-xl">
                   ETS Assessoria e Soluções em Informática
                 </p>
               </div>
-              <h3 className="text-2xl font-bold leading-tight text-gray-500 mobile:-mt-14 desktop:-mt-4">
+              <p className="text-2xl font-bold leading-tight text-gray-500 mobile:-mt-14 desktop:-mt-4">
                 2019 - 2022
-              </h3>
+              </p>
               <div>
-                <h4 className="text-xl font-bold leading-tight text-zinc-100">
+                <h1 className="text-xl font-bold leading-tight text-zinc-100">
                   TI Support | UI Designer
-                </h4>
+                </h1>
                 <p className="mt-2 font-medium leading-tight text-gray-700 mobile:pb-10 mobile:text-base desktop:text-xl">
                   Prefeitura Municipal de São Gonçalo do Amarante - Ceará
                 </p>
               </div>
-              <h3 className="text-2xl font-bold leading-tight text-gray-500 mobile:-mt-9 desktop:-mt-3">
+              <p className="text-2xl font-bold leading-tight text-gray-500 mobile:-mt-9 desktop:-mt-3">
                 2020 - 2024
-              </h3>
+              </p>
               <div>
-                <h4 className="text-xl font-bold leading-tight text-zinc-100">
+                <h1 className="text-xl font-bold leading-tight text-zinc-100">
                   Bacharelado em Sistemas de Informação
-                </h4>
+                </h1>
                 <p className="mt-2 font-medium leading-tight text-gray-700 mobile:pb-10 mobile:text-base desktop:text-xl">
                   Faculdade Lourenço Filho
                 </p>
               </div>
-              <h3 className="text-2xl font-bold leading-tight text-gray-500 mobile:-mt-9 desktop:-mt-3">
+              <p className="text-2xl font-bold leading-tight text-gray-500 mobile:-mt-9 desktop:-mt-3">
                 2017 - 2019
-              </h3>
+              </p>
               <div>
-                <h4 className="text-xl font-bold leading-tight text-zinc-100">
+                <h1 className="text-xl font-bold leading-tight text-zinc-100">
                   Técnico em Informática
-                </h4>
+                </h1>
                 <p className="mt-2 font-medium leading-tight text-gray-700 mobile:pb-10 mobile:text-base desktop:text-xl">
                   E.E.E.P Walter Ramos de Araújo
                 </p>

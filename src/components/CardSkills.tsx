@@ -25,7 +25,7 @@ export function CardSkills(props: CardSkillsProps) {
   if (props.icon === "php") {
     iconPath = phpIcon;
   }
-  if (props.icon === "typeScript") {
+  if (props.icon === "typescript") {
     iconPath = typeScriptIcon;
   }
   if (props.icon === "bootstrap") {
@@ -37,11 +37,13 @@ export function CardSkills(props: CardSkillsProps) {
   if (props.icon === "tailwind") {
     iconPath = tailwindIcon;
   }
+  if (props.icon === "angular") {
+    iconPath = tailwindIcon;
+  }
 
   return (
     <Tilt
-      className="skills-card flex h-[192px] items-center justify-start gap-4 rounded-xl border-2 border-b-0 border-r-0 border-gray-700 border-opacity-30 backdrop-blur-lg 
-        backdrop-filter mobile:w-[360px] mobile:px-6 mobile:py-10 desktop:w-[400px] desktop:px-10 desktop:py-12"
+      className="flex h-[192px] items-center justify-start gap-4 rounded-xl border-2 border-gray-800 bg-zinc-50/5 mobile:w-[360px] mobile:px-6 mobile:py-10 desktop:w-[400px] desktop:px-10 desktop:py-12"
     >
       <Image src={iconPath} alt={props.icon} />
       <div className="flex flex-col items-start gap-2">

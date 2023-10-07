@@ -38,3 +38,22 @@ body {
   border-radius: 999px;
   background-color: #77e123;
 }
+
+.slider::before {
+  background: linear-gradient(to left, transparent 0%, #060606 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 50%;
+  z-index: 10;
+}
+
+.slider::after {
+  background: linear-gradient(to right, transparent 0%, #060606 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 50%;
+  right: 0;
+  z-index: 10;
+}

@@ -96,10 +96,24 @@ module.exports = {
             transform: "rotate(360deg)",
           },
         },
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(-250px * 10))' },
+        },
+        'infinite-scroll-left': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+        'infinite-scroll-right': {
+          from: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(0)' },
+        }
       },
       animation: {
         "fade-in-down": "fade-in-down 2s ease-in-out",
         "fade-in-up": "fade-in-up 2s ease-in-out",
+        'infinite-scroll-left': 'infinite-scroll-left 50s linear infinite',
+        'infinite-scroll-right': 'infinite-scroll-right 50s linear infinite',
         floating: "floating 3s infinite",
         rotate: "rotate 5s linear infinite",
       },

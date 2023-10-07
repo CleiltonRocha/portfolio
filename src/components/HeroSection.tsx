@@ -12,7 +12,7 @@ export function HeroSection() {
     <section className="h-screen w-full flex flex-col items-center justify-center bg-[url('../assets/bg-hero.svg')] bg-contain bg-center bg-no-repeat">
       <Navbar />
       <div className="flex flex-col items-center justify-center desktop:gap-6 mobile:gap-8">
-        <div className="flex flex-col items-center mobile:gap-2 mobile:px-6 desktop:gap-2">
+        <div className="flex flex-col items-center mobile:gap-2 mobile:px-6 desktop:gap-2 desktop:mt-16">
           <Image
             src={profileRounded}
             alt="Profile Image"

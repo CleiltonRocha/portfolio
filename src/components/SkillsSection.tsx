@@ -1,52 +1,91 @@
-import { AnimatedTitles } from "./AnimatedTitles";
 import { CardSkills } from "./CardSkills";
 
 export function SkillsSection() {
   return (
     <section
       id="skills"
-      className="mt-36 bg-[url('../assets/bg-skills.png')] bg-contain bg-center bg-no-repeat mobile:px-4 desktop:h-screen"
+      className="mt-36 mobile:px-4 desktop:h-screen px-[100px]"
     >
       <h1 className="animate-fade-in-down text-zinc-100 text-center font-bold desktop:leading-lg tracking-tighter text-transparent desktop:text-xxs mobile:text-[2.5rem] mobile:leading-sm">
         Hard Skills
       </h1>
-      <div className="mt-20">
-        <div className="flex h-full w-full items-center justify-center gap-8 mobile:flex-col desktop:flex-row">
-          <div className="flex flex-col gap-8 mobile:items-center mobile:justify-center">
-            <CardSkills
-              title="ReactJS"
-              icon="react"
-            />
-            <CardSkills title="PHP" icon="php" />
-          </div>
-
-          <div className="flex flex-col gap-8 mobile:items-center mobile:justify-center">
-            <CardSkills
-              title="React Native"
-              icon="react"
-            />
-            <CardSkills
-              title="TailwindCSS"
-              icon="tailwind"
-            />
-            <CardSkills
-              title="TypeScript"
-              icon="typeScript"
-            />
-          </div>
-
-          <div className="flex flex-col gap-8 mobile:items-center mobile:justify-center">
-            <CardSkills
-              title="NextJS"
-              icon="next"
-            />
-            <CardSkills
-              title="Bootstrap"
-              icon="bootstrap"
-            />
-          </div>
+      <div className="mt-20 w-full inline-flex flex-nowrap overflow-hidden py-3 relative slider">
+        <div className="flex items-center desktop:ml-6 desktop:gap-6 justify-center desktop:gap-4 animate-infinite-scroll-left">
+          <CardSkills
+            title="ReactJS"
+            icon="react"
+          />
+          <CardSkills
+            title="PHP"
+            icon="php"
+          />
+          <CardSkills
+            title="React Native"
+            icon="react"
+          />
+          <CardSkills
+            title="TailwindCSS"
+            icon="tailwind"
+          />
+        </div>
+        <div className="flex items-center justify-center desktop:ml-6 desktop:gap-6 animate-infinite-scroll-left" aria-hidden="true">
+          <CardSkills
+            title="ReactJS"
+            icon="react"
+          />
+          <CardSkills
+            title="PHP"
+            icon="php"
+          />
+          <CardSkills
+            title="React Native"
+            icon="react"
+          />
+          <CardSkills
+            title="TailwindCSS"
+            icon="tailwind"
+          />
+        </div>
+      </div>
+      <div className="w-full inline-flex flex-nowrap overflow-hidden relative slider mt-3">
+        <div className="flex items-center justify-center desktop:gap-6 animate-infinite-scroll-right">
+          <CardSkills
+            title="Bootstrap"
+            icon="bootstrap"
+          />
+          <CardSkills
+            title="NextJS"
+            icon="php"
+          />
+          <CardSkills
+            title="Angular"
+            icon="angular"
+          />
+          <CardSkills
+            title="TypeScript"
+            icon="typescript"
+          />
+        </div>
+        <div className="flex items-center justify-center desktop:ml-6 desktop:gap-6 animate-infinite-scroll-right">
+          <CardSkills
+            title="Bootstrap"
+            icon="bootstrap"
+          />
+          <CardSkills
+            title="NextJS"
+            icon="php"
+          />
+          <CardSkills
+            title="Angular"
+            icon="angular"
+          />
+          <CardSkills
+            title="TypeScript"
+            icon="typescript"
+          />
         </div>
       </div>
     </section>
+
   );
 }
