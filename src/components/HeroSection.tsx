@@ -6,6 +6,7 @@ import profileRounded from "../assets/profile-rounded.png";;
 
 import { GithubIcon, InstagramIcon } from "lucide-react";
 import { LinkedinPlainIcon } from "react-devicons";
+import { AnimatedTitles } from "./AnimatedTitles";
 
 export function HeroSection() {
   return (
@@ -20,9 +21,9 @@ export function HeroSection() {
             width={56}
             height={56}
           />
-          <h1 className="animate-fade-in-down text-zinc-100 text-center font-bold desktop:leading-lg tracking-tighter text-transparent desktop:text-xxs mobile:text-[2.5rem] mobile:leading-sm">
+          <AnimatedTitles>
             UI Designer <span className="text-green">and</span> <br /> Front-end Developer
-          </h1>
+          </AnimatedTitles>
         </div>
         <p className="animate-fade-in-down text-center font-medium text-gray-600 mobile:max-w-[450px] mobile:px-4 mobile:text-xl desktop:max-w-[60%] desktop:text-2xl">
           Olá! Sou Cleilton Rocha! Eu transformo ideias em interfaces intuitivas e crio experiências de usuário incríveis.

@@ -1,6 +1,36 @@
+"use client"
+import React, { useLayoutEffect, useRef, useEffect } from "react";
+import { gsap, Linear } from "gsap";
+
 import { CardSkills } from "./CardSkills";
 
+
+
+
 export function SkillsSection() {
+
+  const slider = useRef(null);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context((self) => {
+      if (self.selector) {
+        const slides = self.selector('.slide');
+        slides.forEach((slide: HTMLElement) => {
+          gsap.to(slide, {
+            x: '-=800',
+            repeat: -1,
+            duration: 10,
+            ease: Linear.easeNone,
+            modifiers: {
+              x: gsap.utils.unitize((x) => parseFloat(x) % 1280),
+            },
+          });
+        });
+      }
+    }, slider);
+  }, []);
+
+
   return (
     <section
       id="skills"
@@ -10,7 +40,7 @@ export function SkillsSection() {
         Hard Skills
       </h1>
       <div className="mt-20 w-full inline-flex flex-nowrap overflow-hidden py-3 relative slider">
-        <div className="flex items-center desktop:ml-6 desktop:gap-6 justify-center animate-infinite-scroll-left">
+        <div ref={slider} className="slider flex items-center desktop:ml-6 desktop:gap-6 justify-center ">
           <CardSkills
             title="ReactJS"
             icon="react"
@@ -27,64 +57,17 @@ export function SkillsSection() {
             title="TailwindCSS"
             icon="tailwind"
           />
-        </div>
-        <div className="flex items-center justify-center desktop:ml-6 desktop:gap-6 animate-infinite-scroll-left" aria-hidden="true">
           <CardSkills
-            title="ReactJS"
-            icon="react"
+            title="AAAA"
+            icon="tailwind"
           />
           <CardSkills
-            title="PHP"
-            icon="php"
-          />
-          <CardSkills
-            title="React Native"
-            icon="react"
-          />
-          <CardSkills
-            title="TailwindCSS"
+            title="BBBBB"
             icon="tailwind"
           />
         </div>
       </div>
-      <div className="w-full inline-flex flex-nowrap overflow-hidden relative slider mt-3">
-        <div className="flex items-center justify-center desktop:gap-6 animate-infinite-scroll-right">
-          <CardSkills
-            title="Bootstrap"
-            icon="bootstrap"
-          />
-          <CardSkills
-            title="NextJS"
-            icon="php"
-          />
-          <CardSkills
-            title="Angular"
-            icon="angular"
-          />
-          <CardSkills
-            title="TypeScript"
-            icon="typescript"
-          />
-        </div>
-        <div className="flex items-center justify-center desktop:ml-6 desktop:gap-6 animate-infinite-scroll-right">
-          <CardSkills
-            title="Bootstrap"
-            icon="bootstrap"
-          />
-          <CardSkills
-            title="NextJS"
-            icon="php"
-          />
-          <CardSkills
-            title="Angular"
-            icon="angular"
-          />
-          <CardSkills
-            title="TypeScript"
-            icon="typescript"
-          />
-        </div>
-      </div>
+      
     </section>
 
   );
