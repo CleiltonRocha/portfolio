@@ -52,8 +52,6 @@ export function ImageProject({ projectName }: ImageProjectProps) {
       <Image
         src={imagePath}
         alt="Project Image"
-        layout="fill"
-        objectFit="cover"
       />
     </div>
   );
