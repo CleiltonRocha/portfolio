@@ -5,19 +5,18 @@ import { ProjectsSection } from "../components/ProjectsSection";
 import { AboutMeSection } from "../components/AboutMeSection";
 import { SkillsSection } from "../components/SkillsSection";
 import { gsap } from "gsap";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Home() {
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+    // gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
-    ScrollSmoother.create({
-      content: "#smooth-content",
-      smooth: 1.5,
-      effects: true
-    });
+    // ScrollSmoother.create({
+    //   content: "#smooth-content",
+    //   smooth: 1.5,
+    //   effects: true
+    // });
   }, [])
   
   return (
