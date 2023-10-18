@@ -22,12 +22,6 @@ body {
   background-size: cover;
 }
 
-.skills-card {
-  background: linear-gradient(137deg, rgba(19, 21, 32, 0.8) 0%, rgba(19, 21, 32, 0.00) 100%);
-  backdrop-filter: blur(113px);
-  opacity: .87 !important;
-}
-
 ::-webkit-scrollbar {
   border-radius: 999px;
   width: 8px;
@@ -39,21 +33,7 @@ body {
   background-color: #77e123;
 }
 
-.slider::before {
-  background: linear-gradient(to left, transparent 0%, #060606 100%);
-  content: '';
-  height: 100%;
-  position: absolute;
-  width: 50%;
-  z-index: 10;
-}
-
-.slider::after {
-  background: linear-gradient(to right, transparent 0%, #060606 100%);
-  content: '';
-  height: 100%;
-  position: absolute;
-  width: 50%;
-  right: 0;
-  z-index: 10;
+nav {
+  position: fixed !important;
+  z-index: 1000;
 }
