@@ -24,7 +24,7 @@ export function AnimatedTitles({ children }: Props) {
   },[])
 
   return (
-    <div className="text-zinc-100 text-center leading-none font-bold desktop:leading-lg tracking-tighter text-transparent desktop:text-xxs mobile:text-[2.5rem] mobile:leading-sm overflow-hidden relative">
+    <div className="text-zinc-100 text-left whitespace-nowrap leading-none font-bold desktop:leading-lg tracking-tighter text-transparent desktop:text-xxs mobile:text-[2.5rem] mobile:leading-sm overflow-hidden relative">
       <h1 className="title leading-tight"> 
         {children}
       </h1>

@@ -1,35 +1,21 @@
-import Image from "next/image";
-
-import { Navbar } from "./Navbar";
-
-import profileRounded from "../assets/profile-rounded.png";;
-
 import { GithubIcon, InstagramIcon } from "lucide-react";
 import { LinkedinPlainIcon } from "react-devicons";
 import { AnimatedTitles } from "./AnimatedTitles";
 
 export function HeroSection() {
   return (
-    <section className="h-screen w-full flex flex-col items-center justify-center bg-[url('../assets/bg-hero.svg')] bg-contain bg-center bg-no-repeat">
-      <Navbar />
-      <div className="flex flex-col items-center justify-center desktop:gap-6 mobile:gap-8">
-        <div className="flex flex-col items-center mobile:gap-2 mobile:px-6 desktop:gap-2 desktop:mt-16">
-          <Image
-            src={profileRounded}
-            alt="Profile Image"
-            className="mobile:w-18 mobile:h-18 border-4 border-blackpearl-950 ring-2 ring-green rounded-full"
-            width={56}
-            height={56}
-          />
+    <section className="h-screen w-full flex flex-col items-start justify-center bg-[url('../assets/bg-hero.jpg')] bg-cover bg-center bg-no-repeat px-[100px]">
+      <div className="flex items-center justify-start desktop:gap-6 mobile:gap-8 relative">
+        <div className="flex flex-col items-start mobile:gap-2 desktop:gap-2 desktop:mt-16">
           <AnimatedTitles>
-            UI Designer <span className="text-green">and</span> <br /> Front-end Developer
+            UI Designer <span className="text-gray-600">and</span> <br /> Front-end Developer
           </AnimatedTitles>
+          <p className="animate-fade-in-down text-left font-medium text-gray-600 mobile:max-w-[450px] mobile:text-xl desktop:max-w-[60%] desktop:text-2xl">
+            Olá! Sou Cleilton Rocha! Eu transformo ideias em interfaces intuitivas e crio experiências de usuário incríveis.
+          </p>
         </div>
-        <p className="animate-fade-in-down text-center font-medium text-gray-600 mobile:max-w-[450px] mobile:px-4 mobile:text-xl desktop:max-w-[60%] desktop:text-2xl">
-          Olá! Sou Cleilton Rocha! Eu transformo ideias em interfaces intuitivas e crio experiências de usuário incríveis.
-        </p>
       </div>
-      <div className="mt-10 flex items-center justify-center gap-3">
+      <div className="mt-10 flex items-start justify-start gap-3">
         <a href="https://www.instagram.com/uidesign.cr/" aria-label="Link para Instagram">
           <div className="flex h-14 w-14 flex-col items-center justify-center rounded-full bg-gray-900 transition-all hover:bg-gray-700">
             <InstagramIcon size="1.5rem" color="#b0b6c9" />

@@ -3,8 +3,37 @@
 @tailwind utilities;
 
 body {
-    -webkit-font-smoothing: antialised;
-    text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialised;
+  text-rendering: optimizeLegibility;
+  cursor: none;
+}
+
+a {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  top:0;
+  left: 0; 
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+.cursor-text {
+  font-size: 5px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: none;
 }
 
 .card-projects {
@@ -31,9 +60,4 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 999px;
   background-color: #77e123;
-}
-
-nav {
-  position: fixed !important;
-  z-index: 1000;
 }
