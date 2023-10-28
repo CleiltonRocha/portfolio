@@ -1,8 +1,8 @@
 import React from "react";
 import "./globals.css";
-import { Manrope } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 
-const manrope = Manrope({ subsets: ["latin"] });
+const plusJakartaSans  = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Porfolio | Cleilton Rocha",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${manrope.className}  bg-blackpearl-950`}>
+      <body className={`${plusJakartaSans.className}  bg-blackpearl-950`}>
         {children}
       </body>
     </html>

@@ -19,7 +19,7 @@ export function HeroSection() {
       <div className="flex items-center justify-start desktop:gap-6 mobile:gap-8 relative">
         <div className="flex flex-col items-start mobile:gap-2 desktop:gap-2 desktop:mt-16">
           <AnimatedTitles>
-            UI Designer and<br /> Front-end Developer
+            <span className="text-gray-300">UI Designer</span> and<br /> <span className="text-gray-300">Front-end</span> Developer
           </AnimatedTitles>
           <p className="paragraph-animated text-left font-medium text-gray-600 mobile:max-w-[450px] mobile:text-xl desktop:max-w-[60%] desktop:text-2xl">
             Olá! Sou Cleilton Rocha! Eu transformo ideias em interfaces intuitivas e crio experiências de usuário incríveis.
