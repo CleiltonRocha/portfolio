@@ -1,27 +1,33 @@
 "use client"
+import { useEffect } from "react";
+import Image from 'next/image'
 import { GithubIcon, InstagramIcon } from "lucide-react";
 import { LinkedinPlainIcon } from "react-devicons";
 import { AnimatedTitles } from "./AnimatedTitles";
-import { useEffect } from "react";
+
+import profileRounded from '@/assets/profile-rounded.png'
 
 export function HeroSection() {
 
   useEffect(() => {
     const paragraph = document.querySelector('.paragraph-animated') as HTMLElement
+    const image = document.querySelector('.profile-rounded') as HTMLElement
 
     setTimeout(() => {
-      paragraph!.classList.add('animate-reveal')
+      paragraph.classList.add('animate-reveal')
+      image.classList.add('animate-reveal')
     }, 2000); 
   }, []);
   
   return (
-    <section className="h-screen w-full flex flex-col items-start justify-center bg-[url('../assets/bg-hero.jpg')] bg-cover bg-center bg-no-repeat px-[100px]">
+    <section className="h-screen w-full flex flex-col desktop:items-start mobile:items-center justify-center desktop:bg-[url('../assets/bg-hero.jpg')] bg-cover bg-center bg-no-repeat desktop:px-[100px] mobile:px-4">
       <div className="flex items-center justify-start desktop:gap-6 mobile:gap-8 relative">
-        <div className="flex flex-col items-start mobile:gap-2 desktop:gap-2 desktop:mt-16">
+        <div className="flex flex-col desktop:items-start mobile:items-center mobile:gap-2 desktop:gap-2 desktop:mt-16">
+          <Image src={profileRounded} alt="Imagem Cleilton Rocha Arredondada" className="profile-rounded filter grayscale desktop:hidden mobile:block" width={64} height={64}/>
           <AnimatedTitles>
-            <span className="text-gray-300">UI Designer</span> and<br /> <span className="text-gray-300">Front-end</span> Developer
+            <span className="text-gray-300">UI Designer</span> &<br /> <span className="text-gray-300">Front-end</span> Developer
           </AnimatedTitles>
-          <p className="paragraph-animated text-left font-medium text-gray-600 mobile:max-w-[450px] mobile:text-xl desktop:max-w-[60%] desktop:text-2xl">
+          <p className="paragraph-animated desktop:text-left mobile:text-center font-medium text-gray-600 mobile:max-w-[90%] mobile:text-xl desktop:max-w-[60%] desktop:text-2xl">
             Olá! Sou Cleilton Rocha! Eu transformo ideias em interfaces intuitivas e crio experiências de usuário incríveis.
           </p>
         </div>

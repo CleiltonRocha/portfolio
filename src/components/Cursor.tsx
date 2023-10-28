@@ -37,7 +37,7 @@ export function Cursor() {
       
 
     return (
-        <div id="cursor" className="custom-cursor cursor"> 
+        <div id="cursor" className="custom-cursor cursor mobile:hidden desktop:block"> 
             <span className="cursor-text">View</span>
         </div>
     )
