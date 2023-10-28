@@ -1,16 +1,27 @@
+"use client"
 import { GithubIcon, InstagramIcon } from "lucide-react";
 import { LinkedinPlainIcon } from "react-devicons";
 import { AnimatedTitles } from "./AnimatedTitles";
+import { useEffect } from "react";
 
 export function HeroSection() {
+
+  useEffect(() => {
+    const paragraph = document.querySelector('.paragraph-animated') as HTMLElement
+
+    setTimeout(() => {
+      paragraph!.classList.add('animate-reveal')
+    }, 2000); 
+  }, []);
+  
   return (
     <section className="h-screen w-full flex flex-col items-start justify-center bg-[url('../assets/bg-hero.jpg')] bg-cover bg-center bg-no-repeat px-[100px]">
       <div className="flex items-center justify-start desktop:gap-6 mobile:gap-8 relative">
         <div className="flex flex-col items-start mobile:gap-2 desktop:gap-2 desktop:mt-16">
           <AnimatedTitles>
-            UI Designer <span className="text-gray-600">and</span> <br /> Front-end Developer
+            UI Designer and<br /> Front-end Developer
           </AnimatedTitles>
-          <p className="animate-fade-in-down text-left font-medium text-gray-600 mobile:max-w-[450px] mobile:text-xl desktop:max-w-[60%] desktop:text-2xl">
+          <p className="paragraph-animated text-left font-medium text-gray-600 mobile:max-w-[450px] mobile:text-xl desktop:max-w-[60%] desktop:text-2xl">
             Olá! Sou Cleilton Rocha! Eu transformo ideias em interfaces intuitivas e crio experiências de usuário incríveis.
           </p>
         </div>

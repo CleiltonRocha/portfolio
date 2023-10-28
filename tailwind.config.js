@@ -107,6 +107,16 @@ module.exports = {
         'infinite-scroll-right': {
           from: { transform: 'translateX(-100%)' },
           to: { transform: 'translateX(0)' },
+        },
+        'reveal' : {
+          '0%': {
+            transform: 'translate(0,100%)',
+            opacity: '0'
+          },
+          '100%': {
+            transform: 'translate(0,0)',
+            opacity: '1'
+          }
         }
       },
       animation: {
@@ -114,8 +124,9 @@ module.exports = {
         "fade-in-up": "fade-in-up 2s ease-in-out",
         'infinite-scroll-left': 'infinite-scroll-left 50s linear infinite',
         'infinite-scroll-right': 'infinite-scroll-right 50s linear infinite',
-        floating: "floating 3s infinite",
-        rotate: "rotate 5s linear infinite",
+        'floating': "floating 3s infinite",
+        'rotate': "rotate 5s linear infinite",
+        'reveal': 'reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s'
       },
     },
   },

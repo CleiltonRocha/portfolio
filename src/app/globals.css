@@ -61,3 +61,25 @@ a {
   border-radius: 999px;
   background-color: #77e123;
 }
+
+.intro {
+  transition: 1s;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  bottom: 20px;
+  opacity: 0;
+}
+
+.logo.active {
+  opacity: 1;
+  bottom: 0;
+  transition: ease-in-out .5s;
+}
+
+.logo.fade {
+  bottom: 150px;
+  transition: ease-in-out .5s;
+}
