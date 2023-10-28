@@ -26,7 +26,7 @@ export function Project() {
         <p className="text-left font-normal text-zinc-200 text-xl max-w-[60%]">
           Uma coleção de desafios promovidos pela rocketseat. Todas as interfaces foram desenvolvidas em HTML, CSS e JS, de maneira responsiva e com interfaces incríveis! Estes projetos contribuiu muito para abranger meus conhecimentos em Front-end.
         </p>
-        <a href="#" className="py-4 mt-6 px-10 bg-zinc-100 font-semibold text-blackpearl-950 tracking-tighter rounded-full">Ver projeto</a>
+        <a href="https://github.com/CleiltonRocha/desafios-bora-codar" className="py-4 mt-6 px-10 bg-zinc-100 font-semibold text-blackpearl-950 tracking-tighter rounded-full">Ver projeto</a>
       </div>
       <div className="sticky top-2 flex flex-col gap-4 items-start justify-end mt-4 p-10 w-full transition ease-in-out bg-gray-950 hover:bg-purple-600 duration-300 rounded-3xl">
         <Image src={ImgHabits} alt="Imagem do projeto Habits" className="rounded-2xl"/>
@@ -38,9 +38,9 @@ export function Project() {
         </div>
         <h1 className="text-zinc-100 font-bold text-3xl tracking-tighter mt-3">Habits</h1>
         <p className=" text-left font-normal text-zinc-200 text-xl max-w-[60%]">
-          Uma coleção de desafios promovidos pela rocketseat. Todas as interfaces foram desenvolvidas em HTML, CSS e JS, de maneira responsiva e com interfaces incríveis! Estes projetos contribuiu muito para abranger meus conhecimentos em Front-end.
+          Uma aplicação web e mobile desenvolvida com React JS, TypeScript, ViteJS, Fastify, Node, Prisma Radix UI e React Native no mobile. Esta aplicação foi desenvolvida no NLW Setup, um evento promovido pela Rocketseat
         </p>
-        <a href="#" className="py-4 mt-6 px-10 bg-zinc-100 font-semibold text-blackpearl-950 tracking-tighter rounded-full">Ver projeto</a>
+        <a href="https://github.com/CleiltonRocha/habits" className="py-4 mt-6 px-10 bg-zinc-100 font-semibold text-blackpearl-950 tracking-tighter rounded-full">Ver projeto</a>
       </div>
       <div className="sticky top-4 flex flex-col gap-4 items-start justify-end mt-4 p-10 w-full transition ease-in-out bg-gray-950 hover:bg-green-600 duration-300 rounded-3xl">
         <Image src={ImgCapsuladoTempo} alt="Imagem do projeto Cápsula do Tempo" className="rounded-2xl"/>
@@ -52,9 +52,9 @@ export function Project() {
         </div>
         <h1 className="text-zinc-100 font-bold text-3xl tracking-tighter mt-3">Cápsula do Tempo</h1>
         <p className=" text-left font-normal text-zinc-200 text-xl max-w-[60%]">
-          Uma coleção de desafios promovidos pela rocketseat. Todas as interfaces foram desenvolvidas em HTML, CSS e JS, de maneira responsiva e com interfaces incríveis! Estes projetos contribuiu muito para abranger meus conhecimentos em Front-end.
+          Projeto desenvolvido no NLW Spacetime, um evento promovido pela Rocketseat.
         </p>
-        <a href="#" className="py-4 mt-6 px-10 bg-zinc-100 font-semibold text-blackpearl-950 tracking-tighter rounded-full">Ver projeto</a>
+        <a href="https://github.com/CleiltonRocha/capsula-do-tempo" className="py-4 mt-6 px-10 bg-zinc-100 font-semibold text-blackpearl-950 tracking-tighter rounded-full">Ver projeto</a>
       </div>
       <div className="sticky top-0 flex flex-col gap-4 items-start justify-end mt-4 p-10 w-full transition ease-in-out bg-gray-950 hover:bg-orange-600 duration-300 rounded-3xl">
         <Image src={ImgLoctrazWebsite} alt="Imagem do projeto Loctraz website" className="rounded-2xl"/>
@@ -63,9 +63,9 @@ export function Project() {
         </div>
         <h1 className="text-zinc-100 font-bold text-3xl tracking-tighter mt-3">Loctraz website</h1>
         <p className=" text-left font-normal text-zinc-200 text-xl max-w-[60%]">
-          Uma coleção de desafios promovidos pela rocketseat. Todas as interfaces foram desenvolvidas em HTML, CSS e JS, de maneira responsiva e com interfaces incríveis! Estes projetos contribuiu muito para abranger meus conhecimentos em Front-end.
+          Interface do site da empresa Loctraz feita no Figma.
         </p>
-        <a href="#" className="py-4 mt-6 px-10 bg-zinc-100 font-semibold text-blackpearl-950 tracking-tighter rounded-full">Ver projeto</a>
+        <a href="https://dribbble.com/shots/21866602-UI-Design-Loctraz-website" className="py-4 mt-6 px-10 bg-zinc-100 font-semibold text-blackpearl-950 tracking-tighter rounded-full">Ver projeto</a>
       </div>
     </section>
   );
