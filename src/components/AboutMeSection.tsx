@@ -9,7 +9,7 @@ export function AboutMeSection() {
   return (
     <section
       id="aboutme"
-      className="relative mt-36 w-full mobile:flex mobile:flex-col mobile:gap-6 mobile:px-6 desktop:grid desktop:grid-cols-2 desktop:px-16"
+      className="relative mt-36 w-full mobile:flex mobile:flex-col mobile:gap-6 mobile:px-4 desktop:grid desktop:grid-cols-2 desktop:px-16"
     >
       <div className="img-with-mark relative before:animate-rotate mobile:before:-top-12 mobile:before:right-0 desktop:before:bottom-32 desktop:before:right-32">
         <Image

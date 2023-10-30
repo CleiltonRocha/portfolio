@@ -17,7 +17,7 @@ export function AnimatedTitles({ children }: Props) {
   }, []);
 
   return (
-    <div className="text-zinc-100 desktop:text-left mobile:text-center leading-none font-bold desktop:leading-lg tracking-tighter text-transparent desktop:text-xxs mobile:text-[3.5rem] mobile:leading-sm overflow-hidden relative">
+    <div className="text-zinc-100 desktop:text-left mobile:text-center leading-none font-semibold desktop:leading-lg tracking-tighter desktop:text-xxs mobile:text-[3.5rem] mobile:leading-sm overflow-hidden relative">
       <h1 className="title leading-tight m-0 overflow-hidden"> 
         <span className="block animate-reveal">{children}</span>
       </h1>
