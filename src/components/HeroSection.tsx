@@ -20,14 +20,14 @@ export function HeroSection() {
   }, []);
   
   return (
-    <section className="mobile:bg-radial-gradient mobile:pb-16 desktop:h-screen w-full flex flex-col desktop:items-start mobile:pt-20 mobile:items-center justify-center desktop:bg-[url('../assets/bg-hero.jpg')] bg-cover bg-center bg-no-repeat desktop:px-[100px] mobile:px-4">
-      <div className="flex items-center justify-start desktop:gap-6 mobile:gap-8 relative">
-        <div className="flex flex-col desktop:items-start mobile:items-center mobile:gap-2 desktop:gap-2 desktop:mt-16">
-          <Image src={profileRounded} alt="Imagem Cleilton Rocha Arredondada" className="profile-rounded filter grayscale desktop:hidden mobile:block" width={64} height={64}/>
-          <AnimatedTitles>
+    <section className="bg-radial-gradient mobile:pb-16 h-screen w-full flex flex-col desktop:items-center mobile:items-center justify-center desktop:px-[100px] mobile:px-4">
+      <div className="flex items-center justify-center desktop:gap-6 mobile:gap-8 relative">
+        <div className="flex flex-col desktop:items-center mobile:items-center mobile:gap-2 desktop:gap-2 ">
+          <Image src={profileRounded} alt="Imagem Cleilton Rocha Arredondada" className="profile-rounded filter grayscale" width={80} height={80}/>
+          <AnimatedTitles className="desktop:text-center mobile:text-center">
             <span className="">UI Designer</span> &<br /> <span className="">Front-end</span> Developer
           </AnimatedTitles>
-          <p className="paragraph-animated desktop:text-left mobile:text-center font-normal text-gray-400 mobile:max-w-[90%] mobile:text-xl desktop:max-w-[60%] desktop:text-2xl">
+          <p className="paragraph-animated desktop:text-center mobile:text-center font-normal text-gray-400 mobile:max-w-[90%] mobile:text-xl desktop:max-w-[60%] desktop:text-2xl">
             Olá! Sou Cleilton Rocha! Eu transformo ideias em interfaces intuitivas e crio experiências de usuário incríveis.
           </p>
         </div>

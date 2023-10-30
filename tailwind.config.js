@@ -13,7 +13,7 @@ module.exports = {
         "gradient-border":
           "linear-gradient(to bottom, #2A2C39 0%, rgba(102, 104, 118, 0.00) 100%)",
           "radial-gradient":
-          "radial-gradient(90% 80% at center 0%, rgba(255,255,255,0.06) 3%, rgba(98, 255, 179, 0) 70%, rgba(98, 255, 179, 0) 100%)",
+          "radial-gradient(90% 80% at center 0%, rgba(255,255,255,0.09) 3%, rgba(98, 255, 179, 0) 70%, rgba(98, 255, 179, 0) 100%)",
         "gradient-time-line-blue":
           "linear-gradient(180deg, rgba(79, 106, 255, 0.00) 0%, #77e123 100%)",
         "gradient-time-line-white":

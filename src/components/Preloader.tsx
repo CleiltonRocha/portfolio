@@ -36,9 +36,9 @@ export function Preloader() {
     }, []);
 
     return (
-        <div className="intro fixed z-50 left-0 top-0 w-screen h-screen bg-zinc-50 flex items-center justify-center">
+        <div className="bg-radial-gradient intro fixed z-50 left-0 top-0 w-screen bg-gray-950 h-screen flex items-center justify-center">
             <h1 className="logo-header text-zinc-100">
-                <span className="logo text-blackpearl-950 text-4xl font-bold leading-tight tracking-tighter">Cleilton</span> <span className="logo text-blackpearl-950 text-4xl font-bold leading-tight ml-2 tracking-tighter">Rocha</span>
+                <span className="logo text-zinc-100 text-4xl font-semibold leading-tight tracking-tighter">Cleilton</span> <span className="logo text-zinc-100 text-4xl font-bold leading-tight ml-2 tracking-tighter">Rocha</span>
             </h1>
         </div>
     )
