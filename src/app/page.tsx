@@ -12,10 +12,10 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulando um tempo de carregamento, você pode ajustar isso de acordo com suas necessidades
     setTimeout(() => {
       setLoading(false);
-    }, 2800); // Defina um tempo igual ao tempo do Preloader
+    }, 2800); 
+
   }, []);
 
   return (
@@ -23,7 +23,7 @@ export default function Home() {
     <>
       <Preloader />
       <Cursor />
-      <div id="smooth-content">
+      <div>
         <HeroSection />
         <ProjectsSection />
         <AboutMeSection />

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 type Props = {
   children: React.ReactNode;
-  className: string;
+  className?: string;
 };
 
 

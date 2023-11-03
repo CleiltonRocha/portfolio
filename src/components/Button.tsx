@@ -1,15 +1,17 @@
 import { Anchor } from "lucide-react";
 
 interface ButtonProps {
-    name: string;
+    name: string
     anchor?: string
-    showIcon?: boolean;
-    icon?: React.ReactNode;
+    showIcon?: boolean
+    icon?: React.ReactNode
+    target?: string
 }
 
-export function Button({ name, anchor, showIcon, icon }: ButtonProps) {
+export function Button({ name, anchor, showIcon, icon, target }: ButtonProps) {
     return (
-        <a href={anchor} 
+        <a  href={anchor}
+            target={target}
             className="flex items-center justify-center gap-3 py-3 px-8 bg-zinc-100 font-semibold text-blackpearl-950 tracking-tighter rounded-full mt-5
             hover:scale-105 transition-all duration-300">
             {name} {showIcon && icon}
