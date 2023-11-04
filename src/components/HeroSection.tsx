@@ -1,9 +1,11 @@
 "use client"
 import { useEffect } from "react";
 import Image from 'next/image'
-import { GithubIcon, InstagramIcon } from "lucide-react";
-import { LinkedinPlainIcon } from "react-devicons";
+
 import { AnimatedTitles } from "./AnimatedTitles";
+
+import { LinkedinPlainIcon } from "react-devicons";
+import { GithubIcon, InstagramIcon } from "lucide-react";
 
 import profileRounded from '@/assets/profile-rounded.png'
 
@@ -33,18 +35,18 @@ export function HeroSection() {
         </div>
       </div>
       <div className="mt-10 flex items-start justify-start gap-3">
-        <a href="https://www.instagram.com/uidesign.cr/" aria-label="Link para Instagram">
-          <div className="flex h-14 w-14 flex-col items-center justify-center rounded-full bg-slate-600/50">
+        <a href="https://www.instagram.com/uidesign.cr/" aria-label="Link para Instagram" target="_blank">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gray-900 ring-1 ring-zinc-800 transition-all duration-300 hover:scale-110">
             <InstagramIcon size="1.5rem" color="#ffffff" />
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/cleilton-rocha/" aria-label="Link para Linkedin">
-          <div className="flex h-14 w-14 flex-col items-center justify-center rounded-full bg-slate-600/50">
+        <a href="https://www.linkedin.com/in/cleilton-rocha/" aria-label="Link para Linkedin" target="_blank">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gray-900 ring-1 ring-zinc-800 transition-all duration-300 hover:scale-110">
             <LinkedinPlainIcon size="1.5rem" color="#ffffff" />
           </div>
         </a>
         <a href="https://github.com/CleiltonRocha" aria-label="Link para Github" target="_blank">
-          <div className="flex h-14 w-14 flex-col items-center justify-center rounded-full bg-slate-600/50">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gray-900 ring-1 ring-zinc-800 transition-all duration-300 hover:scale-110">
             <GithubIcon size="1.5rem" color="#ffffff" />
           </div>
         </a>

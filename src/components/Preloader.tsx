@@ -4,10 +4,8 @@ import { useEffect } from "react";
 
 export function Preloader() {
 
-
     useEffect(() => {
         let intro = document.querySelector('.intro') as HTMLElement ;
-        let logo = document.querySelector('.logo-header') as HTMLElement; 
         let logoSpan = document.querySelectorAll('.logo');
 
         if (intro && logoSpan.length > 0) {

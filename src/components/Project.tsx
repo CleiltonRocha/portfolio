@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import {gsap} from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Tags } from "./Tags";
@@ -22,24 +22,20 @@ export function Project() {
     const imgzoom1 = document.querySelectorAll(".group");
 
     imgzoom1.forEach((element) => {
-      console.log('ELEMENT', element)
-
-        gsap.set(element, { height:0 });
+      gsap.set(element, { height:0 });
       
-        gsap.to(element, {
-            duration: 2,
-            height: "100%",
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: element,
-              start: "top bottom-=200"
-            }
-        });
+      gsap.to(element, {
+        duration: 2,
+        height: "100%",
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: element,
+          start: "top bottom-=200"
+        }
+      });
     })
 
   }, []);
-
-
 
   return (
     <section className="desktop:grid desktop:grid-cols-3 mobile:flex mobile:flex-col gap-4">

@@ -7,19 +7,14 @@ import ProfileImage from "@/assets/profile-image.png";
 
 export function AboutMeSection() {
   return (
-    <section
-      id="aboutme"
-      className="relative pt-20 pb-20 w-full mobile:flex mobile:flex-col mobile:gap-6 mobile:px-4 desktop:grid desktop:grid-cols-2 desktop:px-16"
-    >
+    <section className="relative pt-20 pb-20 w-full mobile:flex mobile:flex-col mobile:gap-6 mobile:px-4 desktop:grid desktop:grid-cols-2 desktop:px-16">
       <Image
         src={ProfileImage}
         alt="Foto de Perfil - Cleilton Rocha"
-        className="-z-index-1 sticky desktop:top-10 filter grayscale"
+        className="sticky desktop:top-10 filter grayscale"
       />
       <div className="flex w-full flex-col items-start justify-start mobile:mt-10 mobile:gap-6 desktop:gap-16">
-        <AnimatedTitles>
-          Sobre mim
-        </AnimatedTitles>
+        <AnimatedTitles>Sobre mim</AnimatedTitles>
         <p className="font-normal leading-tight text-gray-400 mobile:pb-10 mobile:text-base desktop:text-2xl">
           Eu sou um profissional apaixonado por Design e front-end. Adoro criar
           designs bonitos e intuitivos para interfaces digitais e estou

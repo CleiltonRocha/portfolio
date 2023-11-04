@@ -1,4 +1,5 @@
-import { Anchor, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+
 import { AnimatedTitles } from "./AnimatedTitles";
 import { Button } from "./Button";
 import { Project } from "./Project";

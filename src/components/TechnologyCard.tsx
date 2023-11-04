@@ -1,14 +1,3 @@
-import {
-  ReactOriginalIcon,
-  TypescriptPlainIcon,
-  TailwindcssPlainIcon,
-  NextjsLineIcon,
-  NodejsPlainWordmarkIcon,
-  Html5PlainIcon,
-  Css3PlainIcon,
-  JavascriptPlainIcon,
-} from "react-devicons";
-
 interface TechnologyProps {
   name: string,
   icon: React.ReactNode

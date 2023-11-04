@@ -1,6 +1,5 @@
 import { 
   AdonisjsOriginalIcon,
-  AdonisjsOriginalWordmarkIcon, 
   AngularjsPlainIcon, 
   BootstrapPlainIcon, 
   CakephpPlainIcon, 
@@ -13,6 +12,7 @@ import {
   TailwindcssPlainIcon, 
   TypescriptPlainIcon
 } from "react-devicons";
+
 import { AnimatedTitles } from "./AnimatedTitles";
 import { TechnologyCard } from "./TechnologyCard";
 

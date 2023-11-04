@@ -6,7 +6,6 @@ type Props = {
   className?: string;
 };
 
-
 export function AnimatedTitles({ children, className }: Props) {
   
   useEffect(() => {
