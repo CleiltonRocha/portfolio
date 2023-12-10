@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Image from 'next/image'
 
-import { Briefcase, Book } from "lucide-react";
-import { AnimatedTitles } from "./AnimatedTitles";
+import { Briefcase, Book } from 'lucide-react'
+import { AnimatedTitles } from './AnimatedTitles'
 
-import ProfileImage from "@/assets/profile-image.png";
+import ProfileImage from '@/assets/profile-image.png'
 
 export function AboutMeSection() {
   return (
@@ -49,7 +49,9 @@ export function AboutMeSection() {
                 <p className="mt-3 text-2xl font-bold leading-tight text-gray-400">
                   2023
                 </p>
-                <span className="mt-3 flex items-center justify-center px-4 py-1 ring-1 ring-green-500 rounded-sm bg-green-500/10 text-xs  text-green-500">Trabalho atual</span>
+                <span className="mt-3 flex items-center justify-center px-4 py-1 ring-1 ring-green-500 rounded-sm bg-green-500/10 text-xs  text-green-500">
+                  Trabalho atual
+                </span>
               </div>
               <div>
                 <h1 className="text-xl font-bold leading-tight text-zinc-100">
@@ -97,5 +99,5 @@ export function AboutMeSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }
