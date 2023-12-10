@@ -1,8 +1,8 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from 'lucide-react'
 
-import { AnimatedTitles } from "./AnimatedTitles";
-import { Button } from "./Button";
-import { Project } from "./Project";
+import { AnimatedTitles } from './AnimatedTitles'
+import { Button } from './Button'
+import { Project } from './Project'
 
 export function ProjectsSection() {
   return (
@@ -13,14 +13,20 @@ export function ProjectsSection() {
         </AnimatedTitles>
         <div className="flex flex-col desktop:items-start mobile:items-center gap-4 desktop:max-w-[40%]">
           <p className="text-gray-400 desktop:text-xl mobile:text-base desktop:text-left mobile:text-center font-normal">
-            Aqui estão alguns projetos selecionados que mostram minha paixão por criar experiências, 
-            aprender novas tecnologias e elevar o desenvolvimento front-end a um novo nível. Se precisar ver mais, sinta-se 
-            a vontade para acessar o meu github.
+            Aqui estão alguns projetos selecionados que mostram minha paixão por
+            criar experiências, aprender novas tecnologias e elevar o
+            desenvolvimento front-end a um novo nível. Se precisar ver mais,
+            sinta-se a vontade para acessar o meu github.
           </p>
-          <Button name="Acessar Github" showIcon={true} icon={<ArrowUpRight />} anchor="https://github.com/CleiltonRocha/desafios-bora-codar" />
+          <Button
+            name="Acessar Github"
+            showIcon={true}
+            icon={<ArrowUpRight />}
+            anchor="https://github.com/CleiltonRocha/desafios-bora-codar"
+          />
         </div>
       </div>
       <Project />
     </section>
-  );
+  )
 }
