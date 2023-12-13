@@ -17,7 +17,7 @@ export function AnimatedTitles({ children, className }: Props) {
 
   return (
     <div
-      className={` ${className} text-zinc-100 leading-none font-semibold desktop:leading-lg tracking-tighter desktop:text-xxs mobile:text-[3.5rem] mobile:leading-sm overflow-hidden relative`}
+      className={` ${className} text-zinc-100 leading-none font-semibold desktop:leading-lg tracking-tighter desktop:text-xxl mobile:text-[3.5rem] mobile:leading-sm overflow-hidden relative`}
     >
       <h1 className="title leading-tight m-0 overflow-hidden">
         <span className="block animate-reveal">{children}</span>

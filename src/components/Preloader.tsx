@@ -38,12 +38,12 @@ export function Preloader() {
   }, [])
 
   return (
-    <div className="bg-radial-gradient intro fixed z-50 left-0 top-0 w-screen bg-gray-950 h-screen flex items-center justify-center">
+    <div className="bg-radial-gradient intro fixed z-50 left-0 top-0 w-screen bg-black h-screen flex items-center justify-center">
       <h1 className="logo-header text-zinc-100">
-        <span className="logo text-zinc-100 text-4xl font-semibold leading-tight tracking-tighter">
+        <span className="logo text-6xl text-center bg-gradient-to-r leading-tight from-orange-300 via-purple-500 to-purple-800 inline-block text-transparent bg-clip-text">
           Cleilton
         </span>{' '}
-        <span className="logo text-zinc-100 text-4xl font-bold leading-tight ml-2 tracking-tighter">
+        <span className="logo text-6xl ml-4 text-center bg-gradient-to-r leading-tight from-purple-800 to-purple-500 inline-block text-transparent bg-clip-text">
           Rocha
         </span>
       </h1>
