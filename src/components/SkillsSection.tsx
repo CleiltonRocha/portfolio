@@ -18,7 +18,7 @@ import { TechnologyCard } from './TechnologyCard'
 
 export function SkillsSection() {
   return (
-    <section className="bg-radial-gradient bg-gray-950 w-full flex items-center justify-center flex-col gap-4 py-20 desktop:px-16 mobile:px-4">
+    <section className="w-full flex items-center justify-center flex-col gap-4 py-20 desktop:px-16 mobile:px-4">
       <AnimatedTitles>Hard Skills</AnimatedTitles>
       <p className="w-full desktop:text-center mobile:text-center font-normal text-gray-400 mobile:max-w-[90%] desktop:max-w-[60%] mobile:text-xl desktop:text-2xl">
         Algumas tecnologias com que trabalho atualmente e tecnologias em que

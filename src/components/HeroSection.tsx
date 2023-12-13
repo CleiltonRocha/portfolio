@@ -23,7 +23,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="bg-radial-gradient mobile:pb-16 h-screen w-full flex flex-col desktop:items-center mobile:items-center justify-center desktop:px-[100px] mobile:px-4">
+    <section className="bg-[url('../assets/bg-hero.svg')] bg-cover mobile:pb-16 h-screen w-full flex flex-col desktop:items-center mobile:items-center justify-center desktop:px-[100px] mobile:px-4 relative">
       <div className="flex items-center justify-center desktop:gap-6 mobile:gap-8 relative">
         <div className="flex flex-col desktop:items-center mobile:items-center mobile:gap-2 desktop:gap-2 ">
           <Image
@@ -35,7 +35,10 @@ export function HeroSection() {
           />
           <AnimatedTitles className="desktop:text-center mobile:text-center">
             <span className="">UI Designer</span> &<br />{' '}
-            <span className="">Front-end</span> Developer
+            <span className="bg-gradient-to-r leading-tight from-orange-300 via-purple-300 to-purple-500 inline-block text-transparent bg-clip-text">
+              Front-end
+            </span>{' '}
+            Developer
           </AnimatedTitles>
           <p className="paragraph-animated desktop:text-center mobile:text-center font-normal text-gray-400 mobile:max-w-[90%] mobile:text-xl desktop:max-w-[60%] desktop:text-2xl">
             Olá! Sou Cleilton Rocha! Eu transformo ideias em interfaces
@@ -50,7 +53,7 @@ export function HeroSection() {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gray-900 ring-1 ring-zinc-800 transition-all duration-300 hover:scale-110">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-zinc-50/5 transition-all duration-300 hover:scale-110">
             <InstagramIcon size="1.5rem" color="#ffffff" />
           </div>
         </a>
@@ -60,7 +63,7 @@ export function HeroSection() {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gray-900 ring-1 ring-zinc-800 transition-all duration-300 hover:scale-110">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-zinc-50/5 transition-all duration-300 hover:scale-110">
             <LinkedinPlainIcon size="1.5rem" color="#ffffff" />
           </div>
         </a>
@@ -70,11 +73,12 @@ export function HeroSection() {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gray-900 ring-1 ring-zinc-800 transition-all duration-300 hover:scale-110">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-zinc-50/5 transition-all duration-300 hover:scale-110">
             <GithubIcon size="1.5rem" color="#ffffff" />
           </div>
         </a>
       </div>
+      <div className="w-full h-[100px] bg-gradient-to-t from-black via-black/30 to-transparent absolute bottom-0"></div>
     </section>
   )
 }
