@@ -36,20 +36,7 @@ a {
   display: none;
 }
 
-.card-projects {
-  cursor: url("../assets/cursor.svg"), auto;
-  transition: cursor 0.4s ease;
-}
-
-.img-with-mark::before {
-  content: "";
-  position: absolute;
-  width: 8rem;
-  height: 8rem;
-  z-index: 1;
-  background-image: url('../assets/selo.svg');
-  background-size: cover;
-}
+/* Scrollbar Styling */
 
 ::-webkit-scrollbar {
   border-radius: 999px;
@@ -61,6 +48,8 @@ a {
   border-radius: 999px;
   background-color: #FFFFFF;
 }
+
+/* Entry Screen */
 
 .intro {
   transition: 1s;
@@ -82,4 +71,51 @@ a {
 .logo.fade {
   bottom: 150px;
   transition: ease-in-out .5s;
+}
+
+/* Infinite Scroll */
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  overflow: hidden;
+  width: 100%;
+  mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
+  -webkit-mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul > li {
+  grid-area: 1/1;
+  background-origin: padding-box;
+}
+
+ul > li:nth-child(2) {
+  animation-delay: calc(-0.1428 * 40s);
+}
+
+ul > li:nth-child(3) {
+  animation-delay: calc(-0.2857 * 40s);
+}
+
+ul > li:nth-child(4) {
+  animation-delay: calc(-0.4285 * 40s);
+}
+
+ul > li:nth-child(5) {
+  animation-delay: calc(-0.5714 * 40s);
+}
+
+ul > li:nth-child(6) {
+  animation-delay: calc(-0.7142 * 40s);
+}
+
+ul > li:nth-child(7) {
+  animation-delay: calc(-0.8571 * 40s);
+}
+
+ul.alt li{
+  animation-direction: reverse;
 }

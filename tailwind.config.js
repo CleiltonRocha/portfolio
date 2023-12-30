@@ -48,9 +48,18 @@ module.exports = {
             opacity: '1',
           },
         },
+        infiniteScroll: {
+          '14.28%': {
+            transform: 'translate(-100%)',
+          },
+          '14.29%': {
+            transform: 'translate(600%)',
+          },
+        },
       },
       animation: {
         reveal: 'reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s',
+        infiniteScroll: 'infiniteScroll 40s linear infinite',
       },
     },
   },
