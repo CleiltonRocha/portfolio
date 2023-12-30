@@ -13,18 +13,18 @@ import {
   TypescriptPlainIcon,
 } from 'react-devicons'
 
-import { AnimatedTitles } from './AnimatedTitles'
-import { TechnologyCard } from './TechnologyCard'
+import { AnimatedTitles } from '../components/AnimatedTitles'
+import { TechnologyCard } from '../components/TechnologyCard'
 
 export function SkillsSection() {
   return (
-    <section className="w-full flex items-center justify-center flex-col gap-4 py-20 desktop:px-16 mobile:px-4">
+    <section className="flex w-full flex-col items-center justify-center gap-4 py-20 mobile:px-4 desktop:px-16">
       <AnimatedTitles>Hard Skills</AnimatedTitles>
-      <p className="w-full desktop:text-center mobile:text-center font-normal text-gray-400 mobile:max-w-[90%] desktop:max-w-[60%] mobile:text-xl desktop:text-2xl">
+      <p className="w-full font-normal text-gray-400 mobile:max-w-[90%] mobile:text-center mobile:text-xl desktop:max-w-[60%] desktop:text-center desktop:text-2xl">
         Algumas tecnologias com que trabalho atualmente e tecnologias em que
         possuo conhecimento.
       </p>
-      <div className="flex items-center justify-center gap-8 mt-10 flex-wrap">
+      <div className="mt-10 flex flex-wrap items-center justify-center gap-8">
         <TechnologyCard
           name="NodeJS"
           icon={<NodejsPlainIcon color="#ffffff" size="40" />}

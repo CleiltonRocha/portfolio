@@ -1,13 +1,11 @@
 'use client'
-import { useEffect } from 'react'
 import Image from 'next/image'
-
-import { AnimatedTitles } from './AnimatedTitles'
-
-import { GithubIcon, Linkedin, Dribbble } from 'lucide-react'
+import { useEffect } from 'react'
 
 import profileRounded from '@/assets/profile-rounded.png'
-import { InfiniteScroll } from './InfiniteScroll'
+
+import { AnimatedTitles } from '../components/AnimatedTitles'
+import { InfiniteScroll } from '../components/InfiniteScroll'
 
 export function HeroSection() {
   useEffect(() => {
@@ -23,31 +21,31 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="mobile:pb-16 h-screen w-full flex flex-col desktop:items-center mobile:items-center justify-center desktop:px-10 mobile:px-4 relative">
+    <section className="relative flex h-screen w-full flex-col justify-center overflow-hidden mobile:items-center mobile:px-4 mobile:pb-16 desktop:items-center desktop:px-10">
       <div className="absolute top-0 z-[-2] h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-      <div className="flex items-center justify-center desktop:gap-6 mobile:gap-8 relative">
-        <div className="flex flex-col desktop:items-center mobile:items-center mobile:gap-2 desktop:gap-2 ">
+      <div className="flex h-full items-center justify-center mobile:gap-8 desktop:gap-6">
+        <div className="flex flex-col mobile:items-center mobile:gap-2 desktop:items-center desktop:gap-2 ">
           <Image
             src={profileRounded}
             alt="Imagem Cleilton Rocha Arredondada"
-            className="profile-rounded filter grayscale"
+            className="profile-rounded grayscale filter"
             width={80}
             height={80}
           />
-          <AnimatedTitles className="desktop:text-center mobile:text-center">
+          <AnimatedTitles className="mobile:text-center desktop:text-center">
             <span className="">UI Designer</span> &<br />
             <span className="inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">
               Front-end Developer
             </span>
           </AnimatedTitles>
-          <p className="mt-6 paragraph-animated desktop:text-center mobile:text-center mobile:max-w-[90%] text-xl desktop:max-w-[60%] text-gray-300">
+          <p className="paragraph-animated mt-6 text-xl text-gray-300 mobile:max-w-[90%] mobile:text-center desktop:max-w-[60%] desktop:text-center">
             Olá! Sou Cleilton Rocha! Eu transformo ideias em interfaces
             intuitivas e crio experiências de usuário incríveis.
           </p>
         </div>
       </div>
-      <div className="mt-16 flex items-start justify-start gap-4">
-        {/* <a
+      {/* <div className="mt-16 flex items-start justify-start gap-4">
+         <a
           href="https://www.linkedin.com/in/cleilton-rocha/"
           aria-label="Link para Linkedin"
           target="_blank"
@@ -82,8 +80,9 @@ export function HeroSection() {
               <Dribbble size={24} className="text-slate-300" />
             </div>
           </div>
-        </a> */}
+        </a> 
       </div>
+      */}
       <InfiniteScroll />
     </section>
   )

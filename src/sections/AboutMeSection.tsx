@@ -1,17 +1,17 @@
+import { Book, Briefcase } from 'lucide-react'
 import Image from 'next/image'
-
-import { Briefcase, Book } from 'lucide-react'
-import { AnimatedTitles } from './AnimatedTitles'
 
 import ProfileImage from '@/assets/profile-image.png'
 
+import { AnimatedTitles } from '../components/AnimatedTitles'
+
 export function AboutMeSection() {
   return (
-    <section className="relative pt-20 pb-20 w-full mobile:flex mobile:flex-col mobile:gap-6 mobile:px-4 desktop:grid desktop:grid-cols-2 desktop:px-16">
+    <section className="relative w-full pb-20 pt-20 mobile:flex mobile:flex-col mobile:gap-6 mobile:px-4 desktop:grid desktop:grid-cols-2 desktop:px-16">
       <Image
         src={ProfileImage}
         alt="Foto de Perfil - Cleilton Rocha"
-        className="sticky desktop:top-10 filter grayscale"
+        className="sticky grayscale filter desktop:top-10"
       />
       <div className="flex w-full flex-col items-start justify-start mobile:mt-10 mobile:gap-6 desktop:gap-16">
         <AnimatedTitles>Sobre mim</AnimatedTitles>
@@ -49,7 +49,7 @@ export function AboutMeSection() {
                 <p className="mt-3 text-2xl font-bold leading-tight text-gray-400">
                   2023
                 </p>
-                <span className="mt-3 flex items-center justify-center px-4 py-1 ring-1 ring-green-500 rounded-sm bg-green-500/10 text-xs  text-green-500">
+                <span className="mt-3 flex items-center justify-center rounded-sm bg-green-500/10 px-4 py-1 text-xs text-green-500 ring-1  ring-green-500">
                   Trabalho atual
                 </span>
               </div>

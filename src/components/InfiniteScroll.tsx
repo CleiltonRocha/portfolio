@@ -1,13 +1,10 @@
 import Image from 'next/image'
-
-import styledComponentsIcon from '@/assets/icons/styled-components.svg'
-import colors from 'tailwindcss/colors'
-
 import {
   AdonisjsOriginalIcon,
   AngularjsPlainIcon,
   BootstrapPlainIcon,
   Css3PlainIcon,
+  FigmaPlainIcon,
   Html5PlainIcon,
   JavascriptPlainIcon,
   NextjsLineIcon,
@@ -16,18 +13,20 @@ import {
   ReactOriginalIcon,
   SassOriginalIcon,
   TailwindcssPlainIcon,
-  FigmaPlainIcon,
 } from 'react-devicons'
+import colors from 'tailwindcss/colors'
+
+import styledComponentsIcon from '@/assets/icons/styled-components.svg'
 
 export function InfiniteScroll() {
   return (
     <>
-      <ul>
+      <ul className="h-24">
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border hover:shadow-md hover:shadow-indigo-400/50">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <Html5PlainIcon
-                className="desktop:w-10 desktop:h-10 mobile:w-8 mobile:h-8"
+                className="mobile:h-8 mobile:w-8 desktop:h-10 desktop:w-10"
                 color={colors.indigo['300']}
               />
               <span className="text-indigo-200">HTML</span>
@@ -35,10 +34,10 @@ export function InfiniteScroll() {
           </div>
         </li>
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <Css3PlainIcon
-                className="desktop:w-10 desktop:h-10 mobile:w-8 mobile:h-8"
+                className="mobile:h-8 mobile:w-8 desktop:h-10 desktop:w-10"
                 color={colors.indigo['300']}
               />
               <span className="text-indigo-200">CSS</span>
@@ -46,10 +45,10 @@ export function InfiniteScroll() {
           </div>
         </li>
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <JavascriptPlainIcon
-                className="desktop:w-10 desktop:h-10 mobile:w-8 mobile:h-8"
+                className="mobile:h-8 mobile:w-8 desktop:h-10 desktop:w-10"
                 color={colors.indigo['300']}
               />
               <span className="text-indigo-200">JavaScript</span>
@@ -57,10 +56,10 @@ export function InfiniteScroll() {
           </div>
         </li>
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <ReactOriginalIcon
-                className="desktop:w-10 desktop:h-10 mobile:w-8 mobile:h-8"
+                className="mobile:h-8 mobile:w-8 desktop:h-10 desktop:w-10"
                 color={colors.indigo['300']}
               />
               <span className="text-indigo-200">ReactJS</span>
@@ -68,10 +67,10 @@ export function InfiniteScroll() {
           </div>
         </li>
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <NextjsLineIcon
-                className="desktop:w-10 desktop:h-10 mobile:w-8 mobile:h-8"
+                className="mobile:h-8 mobile:w-8 desktop:h-10 desktop:w-10"
                 color={colors.indigo['300']}
               />
               <span className="text-indigo-200">NextJS</span>
@@ -79,10 +78,10 @@ export function InfiniteScroll() {
           </div>
         </li>
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <AngularjsPlainIcon
-                className="desktop:w-10 desktop:h-10 mobile:w-8 mobile:h-8"
+                className="mobile:h-8 mobile:w-8 desktop:h-10 desktop:w-10"
                 color={colors.indigo['300']}
               />
               <span className="text-indigo-200">Angular</span>
@@ -90,10 +89,10 @@ export function InfiniteScroll() {
           </div>
         </li>
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <TailwindcssPlainIcon
-                className="desktop:w-10 desktop:h-10 mobile:w-8 mobile:h-8"
+                className="mobile:h-8 mobile:w-8 desktop:h-10 desktop:w-10"
                 color={colors.indigo['300']}
               />
               <span className="text-indigo-200">TailwindCSS</span>
@@ -101,13 +100,12 @@ export function InfiniteScroll() {
           </div>
         </li>
       </ul>
-
-      <ul className="alt mt-4">
+      <ul className="alt mt-1 h-24">
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <BootstrapPlainIcon
-                className="desktop:w-10 desktop:h-10 mobile:w-8 mobile:h-8"
+                className="mobile:h-8 mobile:w-8 desktop:h-10 desktop:w-10"
                 color={colors.indigo['300']}
               />
               <span className="text-indigo-200">Bootstrap</span>
@@ -115,10 +113,10 @@ export function InfiniteScroll() {
           </div>
         </li>
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <SassOriginalIcon
-                className="desktop:w-10 desktop:h-10 mobile:w-8 mobile:h-8"
+                className="mobile:h-8 mobile:w-8 desktop:h-10 desktop:w-10"
                 color={colors.indigo['300']}
               />
               <span className="text-indigo-200">Sass</span>
@@ -126,8 +124,8 @@ export function InfiniteScroll() {
           </div>
         </li>
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <Image
                 src={styledComponentsIcon}
                 alt="Ícone da biblioteca styled components"
@@ -139,10 +137,10 @@ export function InfiniteScroll() {
           </div>
         </li>
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <FigmaPlainIcon
-                className="desktop:w-10 desktop:h-10 mobile:w-8 mobile:h-8"
+                className="mobile:h-8 mobile:w-8 desktop:h-10 desktop:w-10"
                 color={colors.indigo['300']}
               />
               <span className="text-indigo-200">Figma</span>
@@ -150,10 +148,10 @@ export function InfiniteScroll() {
           </div>
         </li>
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <NodejsPlainIcon
-                className="desktop:w-10 desktop:h-10 mobile:w-8 mobile:h-8"
+                className="mobile:h-8 mobile:w-8 desktop:h-10 desktop:w-10"
                 color={colors.indigo['300']}
               />
               <span className="text-indigo-200">NodeJS</span>
@@ -161,10 +159,10 @@ export function InfiniteScroll() {
           </div>
         </li>
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <AdonisjsOriginalIcon
-                className="desktop:w-10 desktop:h-10 mobile:w-8 mobile:h-8"
+                className="mobile:h-8 mobile:w-8 desktop:h-10 desktop:w-10"
                 color={colors.indigo['300']}
               />
               <span className="text-indigo-200">AdonisJS</span>
@@ -172,10 +170,10 @@ export function InfiniteScroll() {
           </div>
         </li>
         <li className="animate-infiniteScroll">
-          <div className="w-[95%] h-16 border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border overflow-hidden rounded-lg">
-            <div className="flex items-center justify-center gap-4 bg-gradient-to-b text-slate-300 from-neutral-950 to-gray-950/40 h-16 ">
+          <div className="h-16 w-[95%] overflow-hidden rounded-lg border border-transparent bg-gradient-to-b from-gray-700 to-gray-700/30 bg-origin-border">
+            <div className="flex h-16 items-center justify-center gap-2 bg-gradient-to-b from-neutral-950 to-gray-950/40 text-slate-300 ">
               <PostgresqlPlainIcon
-                className="desktop:w-10 desktop:h-10 mobile:w-8 mobile:h-8"
+                className="mobile:h-8 mobile:w-8 desktop:h-10 desktop:w-10"
                 color={colors.indigo['300']}
               />
               <span className="text-indigo-200">PostgreSQL</span>

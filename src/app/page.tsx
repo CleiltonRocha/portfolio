@@ -1,12 +1,12 @@
 'use client'
 import { useEffect, useState } from 'react'
 
-import { HeroSection } from '@/components/HeroSection'
-import { ProjectsSection } from '@/components/ProjectsSection'
-import { AboutMeSection } from '@/components/AboutMeSection'
-import { SkillsSection } from '@/components/SkillsSection'
 import { Cursor } from '@/components/Cursor'
 import { Preloader } from '@/components/Preloader'
+import { AboutMeSection } from '@/sections/AboutMeSection'
+import { HeroSection } from '@/sections/HeroSection'
+import { ProjectsSection } from '@/sections/ProjectsSection'
+import { SkillsSection } from '@/sections/SkillsSection'
 
 export default function Home() {
   const [loading, setLoading] = useState(true)
