@@ -7,10 +7,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Tags } from './Tags'
 import { Button } from './Button'
 
-import ImgBoraCodar from '@/assets/projects/projetos-img/bora-codar.jpg'
-import ImgHabits from '@/assets/projects/projetos-img/habits.jpg'
-import ImgCoffeeDelivery from '@/assets/projects/projetos-img/coffee-delivery.jpg'
-import ImgGithubBlog from '@/assets/projects/projetos-img/github-blog.jpg'
+import ImgBoraCodar from '@/assets/projects/bora-codar.jpg'
+import ImgHabits from '@/assets/projects/habits.jpg'
+import ImgCoffeeDelivery from '@/assets/projects/coffee-delivery.jpg'
+import ImgGithubBlog from '@/assets/projects/github-blog.jpg'
 
 export function Project() {
   return (
