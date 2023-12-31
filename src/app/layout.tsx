@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${plusJakartaSans.className} bg-neutral-950`}>
+      <body className={`${plusJakartaSans.className} bg-slate-950`}>
         {children}
       </body>
     </html>

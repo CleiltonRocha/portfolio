@@ -38,12 +38,12 @@ export function Preloader() {
   }, [])
 
   return (
-    <div className="intro fixed z-50 left-0 top-0 w-screen bg-black h-screen flex items-center justify-center">
+    <div className="intro fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-black">
       <h1 className="logo-header text-zinc-100">
-        <span className="logo tracking-tighter text-6xl text-center inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">
+        <span className="logo inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text text-center text-6xl leading-tight tracking-tighter text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">
           Cleilton
         </span>
-        <span className="logo tracking-tighter text-6xl ml-4 text-center inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">
+        <span className="logo ml-4 inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text text-center text-6xl leading-tight tracking-tighter text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">
           Rocha
         </span>
       </h1>

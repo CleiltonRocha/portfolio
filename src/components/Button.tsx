@@ -11,8 +11,8 @@ export function Button({ name, anchor, showIcon, icon, target }: ButtonProps) {
     <a
       href={anchor}
       target={target}
-      className="flex items-center justify-center gap-3 py-3 px-8 bg-zinc-100 font-semibold text-black tracking-tighter rounded-full mt-5
-      hover:scale-105 transition-all duration-300"
+      className="mt-5 flex items-center justify-center gap-3 rounded-full bg-zinc-100 px-8 py-3 font-semibold tracking-tighter text-black
+      transition-all duration-300 hover:scale-105"
     >
       {name} {showIcon && icon}
     </a>
