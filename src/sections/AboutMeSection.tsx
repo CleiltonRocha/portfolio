@@ -1,8 +1,7 @@
 import Image from 'next/image'
 
-import { Briefcase, Book } from 'lucide-react'
 import { AnimatedTitles } from '../components/AnimatedTitles'
-
+import { Book, Briefcase } from 'phosphor-react'
 import ProfileImage from '@/assets/profile-image.png'
 
 export function AboutMeSection() {

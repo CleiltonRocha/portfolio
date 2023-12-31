@@ -4,8 +4,6 @@ import Image from 'next/image'
 
 import { AnimatedTitles } from '../components/AnimatedTitles'
 
-import { GithubIcon, Linkedin, Dribbble } from 'lucide-react'
-
 import profileRounded from '@/assets/profile-rounded.png'
 import { InfiniteScroll } from '../components/InfiniteScroll'
 
